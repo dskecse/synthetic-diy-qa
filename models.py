@@ -22,6 +22,13 @@ class GenerationResult(BaseModel):
     is_valid: bool
     generated_at: str
 
+class ValidationSummary(BaseModel):
+    total_samples: int
+    valid_samples: int
+    invalid_samples: int
+    validation_rate: int
+    common_errors: list[str]
+
 def validate_json_structure(json_str: str) -> tuple[bool, Optional[DIYRepairQA]]:
     """
     Ensure the output JSON follows a structure

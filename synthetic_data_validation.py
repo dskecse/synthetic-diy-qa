@@ -3,10 +3,11 @@ Synthetic Data Validation
 Ensures generated Q&A pairs are structurally valid, and saves valid data only.
 """
 
+from collections import Counter
 import json
 import os
 
-from models import GenerationResult
+from models import GenerationResult, ValidationSummary
 
 def load_synthetic_dataset(filename: str = "generation_results.json"):
     filepath = os.path.join("data", filename)
@@ -62,10 +63,10 @@ def _validate_structure(item: GenerationResult) -> tuple[bool, list[str]]:
 
     return len(errors) == 0, errors
 
-def validate(results: list[GenerationResult]) -> list[GenerationResult]:
+def validate(results: list[GenerationResult]) -> tuple[list[GenerationResult], ValidationSummary]:
     """
     Run structural validation of dataset items
-    Return only valid dataset items.
+    Return only valid dataset items and errors (if any).
     """
     valid_results = []
     all_errors = []
@@ -79,10 +80,19 @@ def validate(results: list[GenerationResult]) -> list[GenerationResult]:
             item.is_valid = False
             all_errors.extend(errors)
 
-    if len(all_errors):
-        print(f"Dataset has the following errors:\n{all_errors}")
+    error_counter = Counter(all_errors)
+    common_errors = [error for error, count in error_counter.most_common(5)]
 
-    return valid_results # + summary (with errors)
+    # Create a summary
+    summary = ValidationSummary(
+        total_samples=len(results),
+        valid_samples=len(valid_results),
+        invalid_samples=len(results) - len(valid_results),
+        validation_rate=len(valid_results) / len(results) * 100 if len(results) else 0,
+        common_errors=common_errors
+    )
+
+    return valid_results, summary
 
 def main():
     print("Starting synthetic dataset validation...")
@@ -97,11 +107,22 @@ def main():
         results.append(GenerationResult(**item))
 
     # Validate results
-    valid_results = validate(results)
+    valid_results, summary = validate(results)
 
-    print(f"Valid results: {len(valid_results)}/{len(dataset)}")
+    # Print summary
+    print(f"\nValidation Phase Complete:")
+    print(f"Total samples: {summary.total_samples}")
+    print(f"Structurally valid samples: {summary.valid_samples}")
+    print(f"Structurally invalid samples: {summary.invalid_samples}")
+    print(f"Structural validation rate: {summary.validation_rate:.1f}%")
 
-    # TODO: Print summary and save valid data.
+    if len(summary.common_errors):
+        print(f"Most common structural errors:")
+        for i, error in enumerate(summary.common_errors, start=1):
+            print(f"{i}. {error}")
+
+    # TODO: Save valid data
+
 
 if __name__ == "__main__":
     main()
