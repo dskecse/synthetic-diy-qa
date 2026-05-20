@@ -94,6 +94,26 @@ def validate(results: list[GenerationResult]) -> tuple[list[GenerationResult], V
 
     return valid_results, summary
 
+def save_valid_data(valid_data: list[GenerationResult], filename: str = "structurally_valid_qa_pairs.json"):
+    """
+    Save structurally valid Q&A pairs to JSON file
+    """
+    serializable_data = []
+    for item in valid_data:
+        if item.qa_pair:
+            qa_dict = item.qa_pair.model_dump()
+            qa_dict["trace_id"] = item.trace_id
+            serializable_data.append(qa_dict)
+
+    # Create a directory (do not raise if already present)
+    os.makedirs("data", exist_ok=True)
+
+    filepath = os.path.join("data", filename)
+    with open(filepath, "w", encoding="utf-8") as file:
+        json.dump(serializable_data, file, indent=2, ensure_ascii=False)
+
+    print(f"\nValid data saved to {filepath}")
+
 def main():
     print("Starting synthetic dataset validation...")
     dataset = load_synthetic_dataset()
@@ -121,7 +141,8 @@ def main():
         for i, error in enumerate(summary.common_errors, start=1):
             print(f"{i}. {error}")
 
-    # TODO: Save valid data
+    # Save valid data (Q&A pairs only)
+    save_valid_data(valid_results)
 
 
 if __name__ == "__main__":

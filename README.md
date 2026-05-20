@@ -43,3 +43,12 @@ Initial stats:
 ```python
 python3 synthetic_data_validation.py
 ```
+
+Generates `data/structurally_valid_qa_pairs.json`.
+
+Stats:
+
+* Total samples: 20
+* Structurally valid samples: 19
+* Structurally invalid samples: 1
+* Structural validation rate: 95.0%
