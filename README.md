@@ -37,3 +37,9 @@ Initial stats:
 * Valid samples: 19
 * Invalid samples: 1
 * Success rate: 95.0%
+
+### Structural validation phase
+
+```python
+python3 synthetic_data_validation.py
+```
