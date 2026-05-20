@@ -29,7 +29,9 @@ Specify your OpenAI-compatible (e.g. Poe, ChatAnywhere) `API_KEY` and `API_BASE_
 dotenvx run -- python3 synthetic_dataset.py
 ```
 
-Initial Stats:
+Generates `data/generation_results.json`.
+
+Initial stats:
 
 * Total generated: 20
 * Valid samples: 19

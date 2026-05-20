@@ -1,5 +1,6 @@
 from datetime import datetime, UTC
 import json
+import os
 import random
 import time
 import uuid
@@ -172,10 +173,14 @@ class SyntheticDatasetGenerator:
         for result in results:
             serializable_results.append(result.model_dump())
 
-        with open(filename, "w", encoding="utf-8") as f:
+        # Create a directory (do not raise if already present)
+        os.makedirs("data", exist_ok=True)
+
+        filepath = os.path.join("data", filename)
+        with open(filepath, "w", encoding="utf-8") as f:
             json.dump(serializable_results, f, indent=2, ensure_ascii=False)
 
-        print(f"Results saved to {filename}")
+        print(f"Results saved to {filepath}")
 
 
 def generate_synthetic_dataset(num_samples: int = 20):
