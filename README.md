@@ -52,3 +52,9 @@ Stats:
 * Structurally valid samples: 19
 * Structurally invalid samples: 1
 * Structural validation rate: 95.0%
+
+### Failure labeling
+
+```python
+python3 failure_labeling.py
+```
