@@ -44,7 +44,9 @@ Initial stats:
 python3 synthetic_data_validation.py
 ```
 
-Generates `data/structurally_valid_qa_pairs.json`.
+Requires `data/generation_results.json`.
+
+Produces `data/structurally_valid_qa_pairs.json`.
 
 Stats:
 
