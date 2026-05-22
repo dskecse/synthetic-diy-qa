@@ -55,7 +55,7 @@ Stats:
 * Structurally invalid samples: 1
 * Structural validation rate: 95.0%
 
-### Failure labeling
+### Failure labeling phase
 
 ```python
 dotenvx run -- python3 failure_labeling.py
@@ -81,3 +81,9 @@ Failure Mode Breakdown:
 | Overcomplicated Solution | 0.0% (0/19)  |
 | Missing Context          | 5.3% (1/19)  |
 | Poor Quality Tips        | 15.8% (3/19) |
+
+### Failure analysis phase
+
+```python
+python3 failure_analysis.py
+```
