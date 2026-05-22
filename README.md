@@ -87,3 +87,5 @@ Failure Mode Breakdown:
 ```sh
 python3 failure_analysis.py
 ```
+
+Requires `data/failure_labeled_data.csv`.

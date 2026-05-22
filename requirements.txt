@@ -1,3 +1,5 @@
+matplotlib
 openai
 pandas
 pydantic
+seaborn
