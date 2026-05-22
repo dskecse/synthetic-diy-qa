@@ -58,5 +58,15 @@ Stats:
 ### Failure labeling
 
 ```python
-python3 failure_labeling.py
+dotenvx run -- python3 failure_labeling.py
 ```
+
+Requires `data/structurally_valid_qa_pairs.json`.
+
+Creates `data/failure_labeled_data.csv` and `data/failure_labeled_data.json`.
+
+Stats:
+
+* Total samples: 19
+* Overall failures: 4
+* Overall success rate: 78.9%
