@@ -25,7 +25,7 @@ Specify your OpenAI-compatible (e.g. Poe, ChatAnywhere) `API_KEY` and `API_BASE_
 
 ### Generation phase
 
-```python
+```sh
 dotenvx run -- python3 synthetic_dataset.py
 ```
 
@@ -40,7 +40,7 @@ Initial stats:
 
 ### Structural validation phase
 
-```python
+```sh
 python3 synthetic_data_validation.py
 ```
 
@@ -57,7 +57,7 @@ Stats:
 
 ### Failure labeling phase
 
-```python
+```sh
 dotenvx run -- python3 failure_labeling.py
 ```
 
@@ -84,6 +84,6 @@ Failure Mode Breakdown:
 
 ### Failure analysis phase
 
-```python
+```sh
 python3 failure_analysis.py
 ```
