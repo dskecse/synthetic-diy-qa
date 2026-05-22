@@ -70,3 +70,12 @@ Stats:
 * Total samples: 19
 * Overall failures: 4
 * Overall success rate: 78.9%
+
+Failure Mode Breakdown:
+----------------------------------------
+Incomplete Answer        :  10.5% ( 2/19)
+Safety Violations        :   0.0% ( 0/19)
+Unrealistic Tools        :   0.0% ( 0/19)
+Overcomplicated Solution :   0.0% ( 0/19)
+Missing Context          :   5.3% ( 1/19)
+Poor Quality Tips        :  15.8% ( 3/19)

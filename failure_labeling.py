@@ -78,5 +78,16 @@ def main():
     print("  • data/failure_labeled_data.csv")
     print("  • data/failure_labeled_data.json")
 
+    # Print summary by failure mode
+    failure_modes = [failure_mode.name for failure_mode in FailureModeDefinitions.failure_modes()]
+
+    print(f"\nFailure Mode Breakdown:")
+    print("-" * 40)
+    for mode in failure_modes:
+        if mode in failure_df.columns:
+            rate = failure_df[mode].mean()
+            count = failure_df[mode].sum()
+            print(f"{mode.replace("_", " ").title():25}: {rate:6.1%} ({count:2d}/{len(failure_df)})")
+
 if __name__ == "__main__":
     main()
