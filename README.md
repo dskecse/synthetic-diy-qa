@@ -89,3 +89,10 @@ python3 failure_analysis.py
 ```
 
 Requires `data/failure_labeled_data.csv`.
+
+Generates:
+
+* `data/failure_analysis_report.json`
+* `assets/failure_heatmap.png`: failure mode heatmap across all samples
+* `assets/failure_rates.png`: failure rates by mode chart
+* `assets/failure_correlations.png`: failure mode correlations heatmap

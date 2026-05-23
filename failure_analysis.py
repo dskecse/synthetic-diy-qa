@@ -1,3 +1,4 @@
+import json
 import os
 import sys
 
@@ -11,6 +12,7 @@ class FailureAnalyzer:
     def __init__(self, df: pd.DataFrame):
         self.df = df
         self.failure_modes = [failure_mode.name for failure_mode in FailureModeDefinitions.failure_modes()]
+        self.correlation_matrix = df[self.failure_modes].corr()
 
     def _generate_failure_summary(self) -> dict[str, any]:
         """
@@ -135,11 +137,9 @@ class FailureAnalyzer:
         """
         Analyze correlations between failure modes
         """
-        correlation_matrix = self.df[self.failure_modes].corr()
-
         # Create correlation heatmap
         plt.figure(figsize=(10, 8))
-        sns.heatmap(correlation_matrix,
+        sns.heatmap(self.correlation_matrix,
                     annot=True,
                     cmap="coolwarm",
                     center=0,
@@ -159,6 +159,95 @@ class FailureAnalyzer:
         plt.show()
 
         print(f"Correlation heatmap saved to {filepath}")
+
+        return self.correlation_matrix
+
+    def _pattern_to_name(self, pattern: tuple[int, ...]) -> str:
+        """
+        Convert failure pattern tuple (0s and 1s representing failure modes) to readable name
+
+        Returns human-readable pattern name.
+        """
+        if all(x == 0 for x in pattern):
+            return "No Failures"
+
+        failed_modes = [self.failure_modes[i] for i, x in enumerate(pattern) if x == 1]
+        return " + ".join([mode.replace('_', ' ').title() for mode in failed_modes])
+
+    def _identify_failure_patterns(self) -> dict[str, list[int]]:
+        """
+        Identify common failure patterns across samples
+
+        Returns a dictionary mapping failure patterns to sample indices.
+        """
+        patterns = {}
+
+        for idx, row in self.df.iterrows():
+            # Create pattern signature
+            pattern = tuple(row[mode] for mode in self.failure_modes)
+            pattern_name = self._pattern_to_name(pattern)
+
+            if pattern_name not in patterns:
+                patterns[pattern_name] = []
+            patterns[pattern_name].append(idx)
+
+        # Sort by frequency
+        sorted_patterns = dict(sorted(patterns.items(), key=lambda x: len(x[1]), reverse=True))
+
+        return sorted_patterns
+
+    def _generate_recommendations(self, summary: dict, patterns: dict) -> list[str]:
+        """
+        Generate recommendations based on analysis results
+
+        Args:
+            summary: Failure summary statistics
+            patterns: Failure pattern analysis
+
+        Returns a list of recommendation strings.
+        """
+        recommendations = []
+
+        # Most common failure recommendations
+        most_common = summary["most_common_failures"][0]
+        recommendations.append(f"Focus on improving '{most_common.replace('_', ' ')}' - it's the most common failure mode ({summary['failure_mode_rates'][most_common]:.1%} failure rate)")
+
+        # Pattern-based recommendations
+        if "No Failures" in patterns and len(patterns["No Failures"]) > 0:
+            success_rate = len(patterns["No Failures"]) / summary["total_samples"]
+            recommendations.append(f"Good news: {success_rate:.1%} of samples have no failures - analyze these for best practices")
+
+        # Correlation-based recommendations
+        if summary["overall_failure_rate"] > 0.5:
+            recommendations.append("High overall failure rate suggests need for better prompt engineering or model fine-tuning")
+
+        return recommendations
+
+    def generate_detailed_report(self, filename: str = "failure_analysis_report.json"):
+        """
+        Generate comprehensive failure analysis report
+        """
+        summary = self._generate_failure_summary()
+        correlations = self.correlation_matrix # failure mode correlation matrix
+        patterns = self._identify_failure_patterns()
+
+        report = {
+            "summary": summary,
+            "correlations": correlations,
+            "failure_patterns": {k: len(v) for k, v in patterns.items()},
+            "detailed_patterns": patterns,
+            "recommendations": self._generate_recommendations(summary, patterns)
+        }
+
+        os.makedirs("data", exist_ok=True)
+        filepath = os.path.join("data", filename)
+
+        # Save report
+        with open(filepath, "w", encoding="utf-8") as file:
+            json.dump(report, file, indent=2, ensure_ascii=False, default=str)
+
+        print(f"Detailed analysis report saved to {filepath}")
+        return report
 
 def _load_failure_labeled_data(filename: str) -> pd.DataFrame:
     # Create a directory (do not raise if already present)
@@ -190,7 +279,14 @@ def run_failure_analysis(filename: str = "failure_labeled_data.csv"):
     analyzer.create_failure_rate_chart()
     analyzer.analyze_correlations()
 
-    # TODO: Generate a detailed report
+    print("\nGENERATING DETAILED REPORT...")
+    report = analyzer.generate_detailed_report()
+
+    print("\nRECOMMENDATIONS:")
+    for i, recommendation in enumerate(report["recommendations"], 1):
+        print(f"{i}. {recommendation}")
+
+    print("\n✅ Analysis complete!")
 
 if __name__ == "__main__":
     run_failure_analysis()
