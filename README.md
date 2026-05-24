@@ -137,3 +137,23 @@ Goals:
 
 1. Increase overall success rate > 90%.
 2. Fix the prompts to be able to generate all 20 samples.
+
+### Iteration 1
+
+* Total samples: 20
+* Overall Failure Rate: 20.0%
+* Overall Success Rate: 80.0%
+
+Most Problematic Areas:
+
+1. Missing Context: 15.0% (3/20 samples)
+2. Poor Quality Tips: 10.0% (2/20 samples)
+
+Recommendations:
+
+1. Focus on improving 'missing context' - it's the most common failure mode (15.0% failure rate)
+2. 80.0% of samples have no failures - analyze these for best practices
+
+Goals:
+
+1. Increase overall success rate > 90%.
