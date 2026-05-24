@@ -113,8 +113,10 @@ class SyntheticDatasetGenerator:
         """
         trace_id = str(uuid.uuid4())
         timestamp = datetime.now(UTC).isoformat()
+        max_output_tokens = 1000
 
         prompt = self.prompt_templates.get(template)
+        prompt["user"] += f" Keep the generated output in under {max_output_tokens} tokens."
 
         try:
             response = self.client.responses.create(
@@ -122,7 +124,7 @@ class SyntheticDatasetGenerator:
                 instructions=prompt["system"],
                 input=prompt["user"],
                 temperature=0.7,
-                max_output_tokens=1000
+                max_output_tokens=max_output_tokens
             )
             raw_response = response.output_text.strip()
 
