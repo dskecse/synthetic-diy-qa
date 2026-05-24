@@ -96,3 +96,27 @@ Generates:
 * `assets/failure_heatmap.png`: failure mode heatmap across all samples
 * `assets/failure_rates.png`: failure rates by mode chart
 * `assets/failure_correlations.png`: failure mode correlations heatmap
+
+## Failure Analysis Report
+
+### Iteration 0
+
+* Total samples: 19
+* Overall Failure Rate: 21.1%
+* Overall Success Rate: 78.9%
+
+Most Problematic Areas:
+
+1. Poor Quality Tips: 15.8% (3/19 samples)
+2. Incomplete Answer: 10.5% (2/19 samples)
+3. Missing Context: 5.3% (1/19 samples)
+
+Recommendations:
+
+1. Focus on improving 'poor quality tips' - it's the most common failure mode (15.8% failure rate)
+2. 78.9% of samples have no failures - analyze these for best practices
+
+Goals:
+
+1. Increase overall success rate > 90%.
+2. Fix the prompts to be able to generate all 20 samples.
