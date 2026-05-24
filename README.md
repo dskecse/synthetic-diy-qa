@@ -31,12 +31,18 @@ dotenvx run -- python3 synthetic_dataset.py
 
 Generates `data/generation_results.json`.
 
-Initial stats:
+Stats:
 
-* Total generated: 20
-* Valid samples: 19
-* Invalid samples: 1
-* Success rate: 95.0%
+* Iteration 0:
+  * Total generated: 20
+  * Valid samples: 19
+  * Invalid samples: 1
+  * Success rate: 95.0%
+* Iteration 1:
+  * Total generated: 20
+  * Valid samples: 20
+  * Invalid samples: 0
+  * Success rate: 100.0%
 
 ### Structural validation phase
 

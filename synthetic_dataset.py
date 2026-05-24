@@ -28,7 +28,7 @@ class SyntheticDatasetGenerator:
                   "tools_required": ["specific", "tools", "needed"],
                   "steps": ["step 1", "step 2", "etc"],
                   "safety_info": "Important safety warnings and precautions",
-                  "tips": "Professional tips and best practices"
+                  "tips": "Professional tips and best practices that enhance the repair process"
                 }
 
                 Make it realistic and practical for a homeowner."""
@@ -45,7 +45,7 @@ class SyntheticDatasetGenerator:
                   "tools_required": ["specific", "tools", "needed"],
                   "steps": ["step 1", "step 2", "etc"],
                   "safety_info": "Important safety warnings and precautions",
-                  "tips": "Professional tips and best practices"
+                  "tips": "Professional tips and best practices that enhance the repair process"
                 }
 
                 Make it realistic and safe for a homeowner to attempt."""
@@ -62,7 +62,7 @@ class SyntheticDatasetGenerator:
                   "tools_required": ["specific", "tools", "needed"],
                   "steps": ["step 1", "step 2", "etc"],
                   "safety_info": "Critical electrical safety warnings and when to call professionals",
-                  "tips": "Professional tips and best practices"
+                  "tips": "Professional tips and best practices that enhance the repair process"
                 }
 
                 Emphasize safety and when to call a professional. Only include repairs safe for homeowners."""
@@ -79,7 +79,7 @@ class SyntheticDatasetGenerator:
                   "tools_required": ["specific", "tools", "needed"],
                   "steps": ["step 1", "step 2", "etc"],
                   "safety_info": "Important safety warnings and precautions",
-                  "tips": "Professional tips and maintenance best practices"
+                  "tips": "Professional tips and best practices that enhance the maintenance process"
                 }
 
                 Make it realistic and practical for a homeowner to perform safely."""
@@ -96,7 +96,7 @@ class SyntheticDatasetGenerator:
                   "tools_required": ["specific", "tools", "needed"],
                   "steps": ["step 1", "step 2", "etc"],
                   "safety_info": "Important safety warnings and precautions",
-                  "tips": "Professional tips and best practices"
+                  "tips": "Professional tips and best practices that enhance the repair process"
                 }
 
                 Make it realistic and practical for a DIY homeowner with basic skills."""
