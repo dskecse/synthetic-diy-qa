@@ -56,10 +56,16 @@ Produces `data/structurally_valid_qa_pairs.json`.
 
 Stats:
 
-* Total samples: 20
-* Structurally valid samples: 19
-* Structurally invalid samples: 1
-* Structural validation rate: 95.0%
+* Iteration 0:
+  * Total samples: 20
+  * Structurally valid samples: 19
+  * Structurally invalid samples: 1
+  * Structural validation rate: 95.0%
+* Iteration 1:
+  * Total samples: 20
+  * Structurally valid samples: 20
+  * Structurally invalid samples: 0
+  * Structural validation rate: 100.0%
 
 ### Failure labeling phase
 
