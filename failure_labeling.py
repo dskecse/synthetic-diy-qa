@@ -5,6 +5,7 @@ import time
 import uuid
 
 import pandas as pd
+from failure_modes import FailureModeDefinitions
 from llm_judge import LLMJudge
 from models import DIYRepairQA
 from openai_client import get_openai_client
