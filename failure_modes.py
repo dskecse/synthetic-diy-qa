@@ -66,8 +66,8 @@ Rate as 0 (safe) or 1 (safety violation). Respond with only the number.
                 evaluation_prompt="""
 Evaluate if the required tools are REALISTIC for typical homeowners:
 
-SUCCESS(0): Tools commonly available to homeowners or easily obtainable from hardware stores
-FAILURE(1): Requires specialized professional tools, overly expensive equipment or unrealistic tool combinations
+SUCCESS (0): Tools commonly available to homeowners or easily obtainable from hardware stores
+FAILURE (1): Requires specialized professional tools, overly expensive equipment or unrealistic tool combinations
 
 Question: {question}
 Tools Required: {tools_required}
@@ -84,8 +84,8 @@ Rate as 0 (realistic tools) or 1 (unrealistic tools). Respond with only the numb
                 evaluation_prompt="""
 Evaluate if the DIY repair solution is of APPROPRIATE COMPLEXITY:
 
-SUCCESS(0): Solution is appropriately scaled to the problem and homeowner skill level
-FAILURE(1): Solution is overly complex, requires excessive steps or disproportionate to the problem
+SUCCESS (0): Solution is appropriately scaled to the problem and homeowner skill level
+FAILURE (1): Solution is overly complex, requires excessive steps or disproportionate to the problem
 
 Question: {question}
 Equipment Problem: {equipment_problem}
@@ -102,17 +102,17 @@ Rate as 0 (appropriate complexity) or 1 (overcomplicated). Respond with only the
                 success_criteria="Provides context about when to use this solution, prerequisites and situational considerations",
                 failure_criteria="Missing context about applicability, prerequisites or situational factors",
                 evaluation_prompt="""
-Evaluate if the DIY repair guidance provides ENOUGH CONTEXT:
+Evaluate if the DIY repair guidance provides ADEQUATE CONTEXT:
 
-SUCCESS(0): Provides context about when to use this solution, prerequisites and situational considerations
-FAILURE(1): Missing context about applicability, prerequisites or situational factors
+SUCCESS (0): Provides context about when to use this solution, prerequisites and situational considerations
+FAILURE (1): Missing context about applicability, prerequisites or situational factors
 
 Question: {question}
 Answer: {answer}
 Equipment Problem: {equipment_problem}
 Tips: {tips}
 
-Rate as 0 (enough context) or 1 (missing context). Respond with only the number.
+Rate as 0 (adequate context) or 1 (missing context). Respond with only the number.
 """
             ),
             FailureMode(
@@ -123,8 +123,8 @@ Rate as 0 (enough context) or 1 (missing context). Respond with only the number.
                 evaluation_prompt="""
 Evaluate if the provided tips are HIGH QUALITY and VALUABLE:
 
-SUCCESS(0): Tips provide specific, actionable advice that enhances the repair process
-FAILURE(1): Tips are generic, obvious, unhelpful or simply repeat information from the answer
+SUCCESS (0): Tips provide specific, actionable advice that enhances the repair process
+FAILURE (1): Tips are generic, obvious, unhelpful or simply repeat information from the answer
 
 Question: {question}
 Answer: {answer}
