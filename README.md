@@ -71,6 +71,11 @@ Stats:
   * Structurally valid samples: 20
   * Structurally invalid samples: 0
   * Structural validation rate: 100.0%
+* Iteration 2:
+  * Total samples: 20
+  * Structurally valid samples: 20
+  * Structurally invalid samples: 0
+  * Structural validation rate: 100.0%
 
 ### Failure labeling phase
 
