@@ -79,20 +79,25 @@ Creates `data/failure_labeled_data.csv` and `data/failure_labeled_data.json`.
 
 Stats:
 
-* Total samples: 19
-* Overall failures: 4
-* Overall success rate: 78.9%
+* Iteration 0:
+  * Total samples: 19
+  * Overall failures: 4
+  * Overall success rate: 78.9%
+* Iteration 1:
+  * Total samples: 20
+  * Overall failures: 4
+  * Overall success rate: 80.0%
 
 Failure Mode Breakdown:
 
 | Failure Mode             | Failure Rate |
 | :----------------------- | -----------: |
-| Incomplete Answer        | 10.5% (2/19) |
-| Safety Violations        | 0.0% (0/19)  |
-| Unrealistic Tools        | 0.0% (0/19)  |
-| Overcomplicated Solution | 0.0% (0/19)  |
-| Missing Context          | 5.3% (1/19)  |
-| Poor Quality Tips        | 15.8% (3/19) |
+| Incomplete Answer        |  0.0% (0/20) |
+| Safety Violations        |  0.0% (0/19) |
+| Unrealistic Tools        |  0.0% (0/19) |
+| Overcomplicated Solution |  0.0% (0/19) |
+| Missing Context          | 15.3% (3/20) |
+| Poor Quality Tips        | 10.0% (2/20) |
 
 ### Failure analysis phase
 
