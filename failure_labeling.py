@@ -73,7 +73,7 @@ def main():
     os.makedirs("data", exist_ok=True)
 
     failure_df.to_csv(os.path.join("data", "failure_labeled_data.csv"), index=False)
-    failure_df.to_json(os.path.join("data", "failure_labeled_data.json"), orient="records", indent=2)
+    failure_df.to_json(os.path.join("data", "failure_labeled_data.json"), orient="records", indent=2, force_ascii=False)
 
     print(f"\nResults saved to:")
     print("  • data/failure_labeled_data.csv")
