@@ -48,6 +48,11 @@ Stats:
   * Valid samples: 20
   * Invalid samples: 0
   * Success rate: 100.0%
+* Iteration 3:
+  * Total generated: 20
+  * Valid samples: 20
+  * Invalid samples: 0
+  * Success rate: 100.0%
 
 ### Structural validation phase
 
