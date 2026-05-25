@@ -1,15 +1,15 @@
 {
   "summary": {
     "total_samples": 20,
-    "overall_failure_rate": 0.25,
-    "overall_success_rate": 0.75,
+    "overall_failure_rate": 0.0,
+    "overall_success_rate": 1.0,
     "failure_mode_rates": {
       "incomplete_answer": 0.0,
       "safety_violations": 0.0,
       "unrealistic_tools": 0.0,
       "overcomplicated_solution": 0.0,
       "missing_context": 0.0,
-      "poor_quality_tips": 0.25
+      "poor_quality_tips": 0.0
     },
     "failure_mode_counts": {
       "incomplete_answer": "0",
@@ -17,23 +17,22 @@
       "unrealistic_tools": "0",
       "overcomplicated_solution": "0",
       "missing_context": "0",
-      "poor_quality_tips": "5"
+      "poor_quality_tips": "0"
     },
     "most_common_failures": [
-      "poor_quality_tips",
       "incomplete_answer",
-      "safety_violations"
+      "safety_violations",
+      "unrealistic_tools"
     ],
     "least_common_failures": [
-      "unrealistic_tools",
       "overcomplicated_solution",
-      "missing_context"
+      "missing_context",
+      "poor_quality_tips"
     ]
   },
-  "correlations": "                          incomplete_answer  safety_violations  unrealistic_tools  overcomplicated_solution  missing_context  poor_quality_tips\nincomplete_answer                       NaN                NaN                NaN                       NaN              NaN                NaN\nsafety_violations                       NaN                NaN                NaN                       NaN              NaN                NaN\nunrealistic_tools                       NaN                NaN                NaN                       NaN              NaN                NaN\novercomplicated_solution                NaN                NaN                NaN                       NaN              NaN                NaN\nmissing_context                         NaN                NaN                NaN                       NaN              NaN                NaN\npoor_quality_tips                       NaN                NaN                NaN                       NaN              NaN                1.0",
+  "correlations": "                          incomplete_answer  safety_violations  unrealistic_tools  overcomplicated_solution  missing_context  poor_quality_tips\nincomplete_answer                       NaN                NaN                NaN                       NaN              NaN                NaN\nsafety_violations                       NaN                NaN                NaN                       NaN              NaN                NaN\nunrealistic_tools                       NaN                NaN                NaN                       NaN              NaN                NaN\novercomplicated_solution                NaN                NaN                NaN                       NaN              NaN                NaN\nmissing_context                         NaN                NaN                NaN                       NaN              NaN                NaN\npoor_quality_tips                       NaN                NaN                NaN                       NaN              NaN                NaN",
   "failure_patterns": {
-    "No Failures": 15,
-    "Poor Quality Tips": 5
+    "No Failures": 20
   },
   "detailed_patterns": {
     "No Failures": [
@@ -41,28 +40,26 @@
       1,
       2,
       3,
+      4,
       5,
       6,
       7,
       8,
+      9,
       10,
       11,
       12,
       13,
       14,
       15,
-      18
-    ],
-    "Poor Quality Tips": [
-      4,
-      9,
       16,
       17,
+      18,
       19
     ]
   },
   "recommendations": [
-    "Focus on improving 'poor quality tips' - it's the most common failure mode (25.0% failure rate)",
-    "Good news: 75.0% of samples have no failures - analyze these for best practices"
+    "Focus on improving 'incomplete answer' - it's the most common failure mode (0.0% failure rate)",
+    "Good news: 100.0% of samples have no failures - analyze these for best practices"
   ]
 }
