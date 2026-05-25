@@ -52,7 +52,7 @@ class SyntheticDatasetGenerator:
             },
             "electrical_repair": {
                 "system": "You are a licensed electrician specializing in safe home electrical repairs.",
-                "user": """Generate a realistic electrical repair Q&A pair. Focus on SAFE homeowner-level electrical work like outlet replacement, switch repair or light fixture installation.
+                "user": """Generate a realistic electrical repair Q&A pair. Focus on SAFE basic homeowner-level electrical work like outlet replacement, switch repair or light fixture installation.
 
                 Return ONLY a valid JSON object with this exact structure:
                 {
@@ -65,7 +65,7 @@ class SyntheticDatasetGenerator:
                   "tips": "Professional tips and best practices that enhance the repair process"
                 }
 
-                Emphasize safety and when to call a professional. Only include repairs safe for homeowners."""
+                Emphasize safety and when to call a professional. Only include repairs safe and possible for homeowners with basic skills."""
             },
             "hvac_maintenance": {
                 "system": "You are an HVAC technician specializing in homeowner maintenance and basic repairs.",
