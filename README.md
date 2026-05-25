@@ -33,31 +33,12 @@ Generates `data/generation_results.json`.
 
 Stats:
 
-* Iteration 0:
-  * Total generated: 20
-  * Valid samples: 19
-  * Invalid samples: 1
-  * Success rate: 95.0%
-* Iteration 1:
-  * Total generated: 20
-  * Valid samples: 20
-  * Invalid samples: 0
-  * Success rate: 100.0%
-* Iteration 2:
-  * Total generated: 20
-  * Valid samples: 20
-  * Invalid samples: 0
-  * Success rate: 100.0%
-* Iteration 3:
-  * Total generated: 20
-  * Valid samples: 20
-  * Invalid samples: 0
-  * Success rate: 100.0%
-* Iteration 4:
-  * Total generated: 20
-  * Valid samples: 20
-  * Invalid samples: 0
-  * Success rate: 100.0%
+|                     | Iteration 0 | Iteration 1 | Iteration 2 | Iteration 3 | Iteration 4 |
+| ------------------- | ----------: | ----------: | ----------: | ----------: | ----------: |
+| **Total generated** | 20          | 20          | 20          | 20          | 20          |
+| **Valid samples**   | 19          | 20          | 20          | 20          | 20          |
+| **Invalid samples** | 1           | 0           | 0           | 0           | 0           |
+| **Success rate**    | 95.0%       | 100.0%      | 100.0%      | 100.0%      | 100.0%      |
 
 ### Structural validation phase
 
@@ -71,31 +52,12 @@ Produces `data/structurally_valid_qa_pairs.json`.
 
 Stats:
 
-* Iteration 0:
-  * Total samples: 20
-  * Structurally valid samples: 19
-  * Structurally invalid samples: 1
-  * Structural validation rate: 95.0%
-* Iteration 1:
-  * Total samples: 20
-  * Structurally valid samples: 20
-  * Structurally invalid samples: 0
-  * Structural validation rate: 100.0%
-* Iteration 2:
-  * Total samples: 20
-  * Structurally valid samples: 20
-  * Structurally invalid samples: 0
-  * Structural validation rate: 100.0%
-* Iteration 3:
-  * Total samples: 20
-  * Structurally valid samples: 20
-  * Structurally invalid samples: 0
-  * Structural validation rate: 100.0%
-* Iteration 4:
-  * Total samples: 20
-  * Structurally valid samples: 20
-  * Structurally invalid samples: 0
-  * Structural validation rate: 100.0%
+|                                  | Iteration 0 | Iteration 1 | Iteration 2 | Iteration 3 | Iteration 4 |
+| -------------------------------- | ----------: | ----------: | ----------: | ----------: | ----------: |
+| **Total samples**                | 20          | 20          | 20          | 20          | 20          |
+| **Structurally valid samples**   | 19          | 20          | 20          | 20          | 20          |
+| **Structurally invalid samples** | 1           | 0           | 0           | 0           | 0           |
+| **Structural validation rate**   | 95.0%       | 100.0%      | 100.0%      | 100.0%      | 100.0%      |
 
 ### Failure labeling phase
 
@@ -109,26 +71,11 @@ Creates `data/failure_labeled_data.csv` and `data/failure_labeled_data.json`.
 
 Stats:
 
-* Iteration 0:
-  * Total samples: 19
-  * Overall failures: 4
-  * Overall success rate: 78.9%
-* Iteration 1:
-  * Total samples: 20
-  * Overall failures: 4
-  * Overall success rate: 80.0%
-* Iteration 2:
-  * Total samples: 20
-  * Overall failures: 5
-  * Overall success rate: 75.0%
-* Iteration 3:
-  * Total samples: 20
-  * Overall failures: 5
-  * Overall success rate: 75.0%
-* Iteration 4:
-  * Total samples: 20
-  * Overall failures: 0
-  * Overall success rate: 100.0%
+|                          | Iteration 0 | Iteration 1 | Iteration 2 | Iteration 3 | Iteration 4 |
+| ------------------------ | ----------: | ----------: | ----------: | ----------: | ----------: |
+| **Total samples**        | 19          | 20          | 20          | 20          | 20          |
+| **Overall failures**     | 4           | 4           | 5           | 5           | 0           |
+| **Overall success rate** | 78.9%       | 80.0%       | 75.0%       | 75.0%       | 100.0%      |
 
 Failure Mode Breakdown:
 
@@ -158,90 +105,19 @@ Generates:
 
 ## Failure Analysis Report
 
-### Iteration 0
-
-* Total samples: 19
-* Overall Failure Rate: 21.1%
-* Overall Success Rate: 78.9%
-
-Most Problematic Areas:
-
-1. Poor Quality Tips: 15.8% (3/19 samples)
-2. Incomplete Answer: 10.5% (2/19 samples)
-3. Missing Context: 5.3% (1/19 samples)
-
-Recommendations:
-
-1. Focus on improving 'poor quality tips' - it's the most common failure mode (15.8% failure rate)
-2. 78.9% of samples have no failures - analyze these for best practices
-
-Goals:
-
-1. Increase overall success rate > 90%.
-2. Fix the prompts to be able to generate all 20 samples.
-
-### Iteration 1
-
-* Total samples: 20
-* Overall Failure Rate: 20.0%
-* Overall Success Rate: 80.0%
+|                          | Iteration 0 | Iteration 1 | Iteration 2 | Iteration 3 | Iteration 4 |
+| ------------------------ | ----------: | ----------: | ----------: | ----------: | ----------: |
+| **Total samples**        | 19          | 20          | 20          | 20          | 20          |
+| **Overall failure rate** | 21.1%       | 20.0%       | 25.0%       | 25.0%       | 0.0%        |
+| **Overall success rate** | 78.9%       | 80.0%       | 75.0%       | 75.0%       | 100.0%      |
 
 Most Problematic Areas:
 
-1. Missing Context: 15.0% (3/20 samples)
-2. Poor Quality Tips: 10.0% (2/20 samples)
+|                              | Iteration 0          | Iteration 1          | Iteration 2          | Iteration 3          | Iteration 4         |
+| ---------------------------- | -------------------: | -------------------: | -------------------: | -------------------: | ------------------: |
+| **Poor Quality Tips**        | 15.8% (3/19 samples) | 10.0% (2/20 samples) | 10.0% (2/20 samples) | 25.0% (5/20 samples) | 0.0% (0/20 samples) |
+| **Incomplete Answer**        | 10.5% (2/19 samples) |  0.0% (0/20 samples) | 10.0% (2/20 samples) |  0.0% (0/20 samples) | 0.0% (0/20 samples) |
+| **Missing context**          |  5.3% (1/19 samples) | 15.0% (3/20 samples) |  0.0% (0/20 samples) |  0.0% (0/20 samples) | 0.0% (0/20 samples) |
+| **Overcomplicated Solution** |  0.0% (0/19 samples) |  0.0% (0/20 samples) |  5.0% (1/20 samples) |  0.0% (0/20 samples) | 0.0% (0/20 samples) |
 
-Recommendations:
-
-1. Focus on improving 'missing context' - it's the most common failure mode (15.0% failure rate)
-2. 80.0% of samples have no failures - analyze these for best practices
-
-Goals:
-
-1. Increase overall success rate > 90%.
-
-### Iteration 2
-
-* Total samples: 20
-* Overall Failure Rate: 25.0%
-* Overall Success Rate: 75.0%
-
-Most Problematic Areas:
-
-1. Incomplete Answer: 10.0%
-2. Poor Quality Tips: 10.0%
-3. Overcomplicated Solution: 5.0%
-
-Recommendations:
-
-1. Focus on improving 'incomplete answer' - it's the most common failure mode (10.0% failure rate)
-2. 75.0% of samples have no failures - analyze these for best practices
-
-Goals:
-
-1. Increase overall success rate > 90%.
-
-### Iteration 3
-
-* Total samples: 20
-* Overall Failure Rate: 25.0%
-* Overall Success Rate: 75.0%
-
-Most Problematic Areas:
-
-1. Poor Quality Tips: 25.0%
-
-Recommendations:
-
-1. Focus on improving 'poor quality tips' - it's the most common failure mode (25.0% failure rate)
-2. 75.0% of samples have no failures - analyze these for best practices
-
-Goals:
-
-1. Increase overall success rate > 90%.
-
-### Iteration 4 (Final)
-
-* Total samples: 20
-* Overall Success Rate: 100.0%
-* Overall Failure Rate: 0.0%
+Goal: increase overall success rate > 90% :done:
