@@ -103,7 +103,7 @@ Generates:
 * `assets/failure_rates.png`: failure rates by mode chart
 * `assets/failure_correlations.png`: failure mode correlations heatmap
 
-## Failure Analysis Report
+Report:
 
 |                          | Iteration 0 | Iteration 1 | Iteration 2 | Iteration 3 | Iteration 4 |
 | ------------------------ | ----------: | ----------: | ----------: | ----------: | ----------: |
@@ -120,4 +120,4 @@ Most Problematic Areas:
 | **Missing context**          |  5.3% (1/19 samples) | 15.0% (3/20 samples) |  0.0% (0/20 samples) |  0.0% (0/20 samples) | 0.0% (0/20 samples) |
 | **Overcomplicated Solution** |  0.0% (0/19 samples) |  0.0% (0/20 samples) |  5.0% (1/20 samples) |  0.0% (0/20 samples) | 0.0% (0/20 samples) |
 
-Goal: increase overall success rate > 90% :done:
+Goal: increase overall success rate > 90% :white_check_mark:
