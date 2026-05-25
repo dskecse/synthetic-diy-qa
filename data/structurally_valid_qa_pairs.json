@@ -1,603 +1,550 @@
 [
   {
-    "question": "My dishwasher won’t drain and leaves water in the bottom after a cycle. How can I troubleshoot and fix it?",
-    "answer": "First confirm the unit is actually draining by checking for standing water and listening for a drain pump hum during the drain portion. Then inspect and clear the filter and drain area for clogs (common cause). If water remains, test the drain pump for power and check the pump for blockages (often food debris or broken glass). Finally, verify the drain hose isn’t kinked or clogged and that the garbage disposal (if connected) isn’t obstructed. Replace the drain pump or control board only after confirming the above checks.",
-    "equipment_problem": "Dishwasher (built-in) that does not drain properly; water remains in the tub after the wash and rinse cycles.",
+    "question": "Why won’t my refrigerator ice maker produce ice, and how can I troubleshoot and fix it?",
+    "answer": "Start with the simplest checks: confirm the freezer is cold enough, verify the ice maker is getting water, and inspect common failure points (water inlet valve, ice maker fill tube, and the ice maker itself). Measure freezer temperature, check the water supply line for freezing or kinks, test for water flow to the ice maker, clear any ice blockage in the fill tube, and then check electrical operation of the ice maker and water inlet valve. If water doesn’t reach the ice maker, focus on the inlet valve and wiring; if water reaches it but ice isn’t produced, the ice maker module or thermostat/timer is likely faulty.",
+    "equipment_problem": "Side-by-side refrigerator ice maker not producing ice; water line seems connected but no ice forms, and the freezer is around 40°F (4°C).",
     "tools_required": [
-      "screwdriver (Phillips/flathead)",
-      "bucket or shallow pan",
-      "towel/rags",
-      "multimeter (for continuity/voltage checks)",
-      "pliers or needle-nose pliers",
+      "multimeter",
       "flashlight",
-      "soft brush or sponge",
-      "wet/dry shop vacuum (optional)"
+      "small brush or nylon pick",
+      "towels",
+      "hair dryer (low/medium heat) or heat gun on low (careful)",
+      "screwdriver set",
+      "bucket or tray (to catch water)"
     ],
     "steps": [
-      "Unplug the dishwasher (or turn off the breaker) and scoop out as much standing water as possible using a cup/bucket; dry the bottom area with towels.",
-      "Remove the bottom rack and pull out the dishwasher filter assembly (typically a coarse strainer + fine filter). Rinse the filters under running water and remove any debris from the sump area.",
-      "Check the drain intake/sump for obstructions (food particles, labels, glass, small bones). Use a soft brush or vacuum to clear the area.",
-      "Inspect the impeller/drain pump area: look for debris around the pump inlet; if accessible, remove the obstruction. Rotate the pump impeller by hand only if the unit design allows safe access (do not force).",
-      "Verify the drain hose connection: locate the drain hose under the sink (or behind the unit), confirm it isn’t kinked, crushed, or improperly seated; check for clogs at the high loop/connection.",
-      "If connected to a garbage disposal, ensure the disposal knockout plug is removed (or clear any blockage) and run disposal water briefly to confirm flow.",
-      "Restore power and start a short cycle (or manually run drain if your model supports it). During the drain phase, listen for the drain pump. If there’s no sound, unplug and test the pump circuit with a multimeter (check for power to the pump during drain).",
-      "If the pump receives power but won’t run, replace the drain pump. If power is absent, suspect wiring/control issues; consult the dishwasher’s wiring diagram and consider professional service if the control board is likely.",
-      "Reassemble filters, run a test cycle, and confirm the tub drains completely and no water remains at the end."
+      "Check freezer temperature with a thermometer; ice makers typically require about 0°F to 10°F (-18°C to -12°C). If it’s ~40°F, fix cooling first (compressor/evaporator/fan/defrost issues).",
+      "Confirm the ice maker is turned on (some units have a switch or an arm). Remove the ice bucket and inspect the ice maker area for frost buildup or obstructions.",
+      "Inspect the water supply line behind/under the refrigerator for kinks, loose connections, or leaks. Ensure the shutoff valve is fully open.",
+      "Test whether water reaches the ice maker: during an ice-making cycle (or by manually initiating a harvest/fill cycle if your model allows), listen for a brief valve click and look for water flow at the ice maker fill tube area.",
+      "If water flow is weak or absent, check the water inlet valve operation: unplug the refrigerator, access the inlet valve wiring, and use a multimeter to verify the valve receives power during a call for water (or follow your model’s service procedure). Replace the inlet valve if it fails.",
+      "If water is present but ice doesn’t dispense, check the fill tube for blockage: look for ice buildup restricting water. Unplug the refrigerator and thaw the fill tube area carefully using a hair dryer on low/medium heat, keeping heat away from plastic and wiring; use towels to manage melt water.",
+      "After thawing, reassemble and run a test cycle. If the freezer is cold enough and the fill tube clears but the ice maker still doesn’t harvest or fill properly, the ice maker assembly (thermostat/timer/module) may be defective—replace the ice maker per model number."
     ],
-    "safety_info": "Disconnect power at the breaker or unplug before reaching into the sump or handling wiring. Dishwasher water may contain detergent and debris—avoid direct contact with sharp glass. Do not bypass safety interlocks. If you must test electrical components with a multimeter, keep hands dry, use insulated probes, and avoid working in standing water.",
-    "tips": "Take photos of filter placement and wiring before disassembly. Clean the filter regularly to prevent recurring clogs. Use a flashlight to inspect the sump thoroughly—small items can block the pump inlet. If the dishwasher drains slowly but eventually empties, focus on partial clogs in the filter/sump or drain hose rather than immediately replacing the pump. If you find repeated debris, check for improper loading (large food scraps, labels, or utensils blocking the filter).",
-    "trace_id": "4d14d327-4b4a-4611-b820-902bc389fbfe"
+    "safety_info": "Unplug the refrigerator before removing panels or working near electrical connections. Use caution when thawing ice—avoid overheating plastic parts and never use an open flame. Turn off the water at the shutoff valve before disconnecting any water lines. Wear eye protection when clearing ice and keep electrical components dry to prevent shock or short circuits.",
+    "tips": "Record your freezer temperature and any error codes before changing parts. Use the refrigerator’s model number to confirm the correct inlet valve and ice maker part. If the freezer is not reaching proper temperature, don’t assume the ice maker is bad—cooling/defrost and evaporator fan issues are common root causes. After repairs, allow 24 hours for ice production to normalize, and discard the first batch of ice if the water line was disturbed.",
+    "trace_id": "7e21376b-a1e6-4bbf-a85d-b120fcbd5fd8"
   },
   {
-    "question": "My living room wall outlet stopped working. How can I safely replace the outlet and check whether the wiring is still OK?",
-    "answer": "You can replace the outlet safely if the issue is limited to the receptacle itself. Turn off power at the correct breaker, confirm the outlet is dead using a non-contact tester and/or a multimeter, then remove the old outlet and inspect wiring for damage or looseness. Install a new receptacle with the same type rating (typically 15A/120V or 20A/120V) and the same wiring configuration (hot/neutral/ground). Re-tighten all terminal screws, tuck wires neatly, and test power after restoring the breaker. If you find damaged insulation, burn marks, aluminum wiring that needs special handling, or you’re unsure which breaker feeds the circuit, stop and call a licensed electrician.",
-    "equipment_problem": "Non-working standard wall receptacle (outlet) likely due to a failed receptacle or loose/damaged connections",
+    "question": "My central air suddenly isn’t cooling well. Could a dirty air filter or a thermostat setting be the cause, and how can I troubleshoot it safely before calling a technician?",
+    "answer": "Yes—start with the simplest checks. First, replace the air filter if it’s dirty or past its service interval. Next, confirm the thermostat is set to COOL, the fan is set to AUTO (for normal cooling), and the temperature setpoint is below the current room temperature. Then, inspect supply/return vents for blockages and ensure the indoor blower is running when the system calls for cooling. Finally, check for basic airflow problems (ice on the evaporator coil is a sign of restricted airflow). If the system runs but airflow is weak or cooling still doesn’t improve after the filter/thermostat checks, stop and arrange professional service.",
+    "equipment_problem": "Clogged HVAC air filter and potential thermostat misconfiguration preventing adequate cooling",
+    "tools_required": [
+      "correct replacement HVAC air filter",
+      "flashlight",
+      "clean cloth or vacuum (for vent/register dust)",
+      "screwdriver (only if your filter access requires it)",
+      "thermometer (optional)"
+    ],
+    "steps": [
+      "Turn the thermostat to OFF (or set to a non-cooling mode) and allow the system to cycle down.",
+      "Locate the return-air filter (commonly at the furnace/air handler or a filter grille). Remove the old filter and check the condition. If it’s visibly dirty, clogged, or older than the recommended interval (often 1–3 months during heavy use), replace it with the same size and correct MERV rating.",
+      "Verify airflow direction on the new filter (arrow pointing toward the furnace/air handler). Reinstall the filter snugly to prevent bypass air.",
+      "Set the thermostat to COOL mode and set the target temperature 3–5°F (1–3°C) below the current room temperature. Set Fan to AUTO.",
+      "Wait 5–10 minutes for the system to respond. Listen for the indoor blower and check that air is coming from supply vents.",
+      "Inspect vents/registers for obstructions (furniture, rugs, closed dampers). Open any closed supply vents that belong to the main airflow path.",
+      "Check for signs of airflow restriction: if you see frost/ice on exposed coil surfaces at the air handler or notice very weak airflow, do not run the system further—restricted airflow can damage components.",
+      "If the thermostat is calling for cooling but the indoor blower won’t start, or if cooling still doesn’t improve after filter/setting corrections, stop troubleshooting and contact a qualified HVAC technician."
+    ],
+    "safety_info": "Turn the thermostat to OFF before removing panels or handling filters. Avoid touching electrical components with wet hands. If you see ice on the evaporator coil or smell burning/overheating, stop operation and do not continue running the system. If you must remove access panels, ensure power is off at the breaker if the panel exposes wiring or live components.",
+    "tips": "Replace filters on a predictable schedule (more often in summer if you have pets, allergies, or high dust). Keep thermostat locations away from direct sunlight, drafts, and heat sources for accurate readings. During peak cooling season, check filters monthly and clean return grilles with a vacuum attachment rather than blocking them. If you’ve recently changed the filter MERV rating, ensure it matches the system’s design; overly restrictive filters can reduce airflow and cause cooling issues.",
+    "trace_id": "08500ac7-10a0-40fc-8399-8e2b2a1baeff"
+  },
+  {
+    "question": "My Samsung top-load washing machine won’t drain and the “Suds”/“Drain” error appears after the cycle starts. What should I check and how can I fix it?",
+    "answer": "Check for a clogged drain path first, then verify the pump and lid lock operation. Start by unplugging the washer, inspect the drain hose and standpipe for blockages/kinks, clean the pump filter/coin trap (if present), and confirm the drain pump can spin freely. If the pump runs but water still won’t clear, check for a failed pump or a blocked impeller. After clearing, reassemble, run a short drain/spin test, and confirm the error clears.",
+    "equipment_problem": "Top-load washing machine (Samsung) not draining; water remains in the tub and an error related to suds/drain appears.",
+    "tools_required": [
+      "multimeter",
+      "bucket",
+      "towels",
+      "screwdriver (Phillips/flathead as needed)",
+      "pliers (optional)",
+      "flashlight",
+      "brush or small bottle brush"
+    ],
+    "steps": [
+      "Unplug the washer and turn off the water taps to avoid accidental operation.",
+      "Use towels and a bucket to manage remaining water. If the unit has an access panel/coin trap near the bottom front, place the bucket underneath.",
+      "Clean the pump filter/coin trap: remove the cap/filter, remove lint/debris/coins, and rinse the area. Ensure the filter is fully seated when reinstalling.",
+      "Inspect the drain hose: check for kinks, crushed sections, or a hose that is too deep into the standpipe. Make sure it has a proper downward slope.",
+      "Check the standpipe/house plumbing: if possible, remove the hose from the standpipe and look for blockages (a clog in the standpipe commonly causes no-drain).",
+      "Check the pump outlet for obstruction: if you can access the pump area, look for trapped debris around the impeller. Remove any blockage you can safely reach.",
+      "Test pump operation: plug in briefly and run a drain/spin cycle while listening for pump sound. If it’s silent, check the pump power at the pump connector with a multimeter (only if you’re comfortable and follow safe procedures).",
+      "If the pump is silent and power is present at the connector, the pump likely has failed; if no power is present, the issue may be in wiring/control (often requires service).",
+      "Reassemble everything, secure the hose, and run a short drain/spin or rinse cycle to confirm water clears and the error stops."
+    ],
+    "safety_info": "Unplug before opening panels or handling the pump filter. Water may be hot—allow it to cool. Avoid reaching into the pump area while power is connected. Use towels to prevent slipping, and be cautious with sharp edges around access panels. If you suspect electrical faults (burning smell, melted connectors), stop and contact a technician.",
+    "tips": "Use a flashlight to locate small debris in the coin trap; even a few socks or lint clumps can prevent drainage. Don’t overload the washer or use excess detergent—too many suds can trigger drain-related errors. After cleaning, ensure the filter cap is tightened/locked correctly to prevent leaks. If the pump runs but the tub still doesn’t drain, suspect a blocked impeller or restricted hose/standpipe rather than the control board.",
+    "trace_id": "82308140-98e5-4bcc-bf21-60d14c8a8ec4"
+  },
+  {
+    "question": "My top-load washing machine stops mid-cycle and the drain pump runs continuously. What should I check and how can I fix it?",
+    "answer": "1) Unplug the washer and inspect the drain hose and standpipe for clogs or improper height (typical standpipe height is ~18–30 in / 45–75 cm). 2) Check the lid-lock/switch: a faulty lid switch can interrupt the wash cycle while the control tries to drain. Test continuity of the lid switch with a multimeter (replace if open when closed). 3) Inspect the drain pump filter/cleanout (if your model has one) and remove any debris. 4) Verify the pressure/level sensor hose is clear and properly seated; a blocked hose can cause false level readings leading to repeated drain cycles. 5) If all checks pass, test the drain pump for power at the connector during the drain state; if power is present but the pump doesn’t run, replace the pump. If power is not present, the main control board may be faulty and should be diagnosed by a technician.",
+    "equipment_problem": "Top-load washing machine that stops mid-cycle; drain pump runs continuously and cycle never completes (likely drain restriction, lid switch/lock issue, or level/pressure sensor fault).",
+    "tools_required": [
+      "multimeter",
+      "screwdriver set",
+      "needle-nose pliers",
+      "flashlight",
+      "towel or shallow pan",
+      "soft brush or small vacuum"
+    ],
+    "steps": [
+      "Unplug the washer, then turn off water taps if you need to move the unit.",
+      "Check the drain hose: ensure it is not kinked, not inserted too far into the standpipe, and the standpipe height is within the manufacturer’s range.",
+      "Look for clogs at the drain path: remove the drain hose at the washer end and briefly check for blockage; clear debris if found.",
+      "Access the pump cleanout/filter (often behind a small lower panel or at the front bottom). Place a towel/pan under it, open carefully, and remove trapped lint/coins/socks.",
+      "Inspect and reseat the pressure/level sensor hose (usually a small tube from the tub to the control). Blow gently through it or clear lint with a soft brush; replace if cracked or disconnected.",
+      "Test the lid switch/lock: with the lid closed, measure continuity across the switch terminals. If it doesn’t show continuity when closed (or shows continuity when open), replace the lid switch/lock assembly.",
+      "Check drain pump operation: during the drain state (only after reassembly and with caution), observe whether the pump runs. If it runs but doesn’t drain, re-check for blockage; if it doesn’t run, test for voltage at the pump connector while the unit attempts to drain.",
+      "If voltage is present at the pump but the pump is not running, replace the drain pump. If voltage is absent, suspect the control board/relay and consider professional diagnosis."
+    ],
+    "safety_info": "Unplug the washer before removing panels or touching wiring. Water may remain in the pump/drain area—use towels and a shallow pan. Avoid bypassing safety switches (lid lock). If you must test live voltage, keep hands dry, use insulated probes, and do not touch exposed terminals beyond the probe points.",
+    "tips": "Take photos of wire connectors and hose routing before disconnecting parts. Use the model number to confirm the correct lid switch and pump specs. After clearing clogs, run a short rinse/spin cycle to verify the drain completes once. If the washer repeatedly drains immediately after starting, prioritize lid switch/lock and level/pressure sensor checks before replacing major parts.",
+    "trace_id": "f344be15-53e7-445a-aa0e-14e1873635c2"
+  },
+  {
+    "question": "My HVAC air filter keeps showing heavy dust buildup in less than a month. How can I change the filter correctly and check whether a thermostat setting is causing short cycling?",
+    "answer": "1) Turn off the HVAC system at the thermostat and/or breaker. 2) Find the filter slot (usually in the return air duct or air handler). Note the airflow direction arrow on the filter frame. 3) Remove the old filter without shaking dust into the room. 4) Install the new filter with the arrow pointing toward the blower/airflow direction; use the exact size and the MERV rating recommended for your system. 5) Close the access panel securely. 6) Verify thermostat settings: set fan to AUTO (not ON) and confirm heating/cooling mode and target temperature. 7) Observe behavior for 15–30 minutes: if the system turns on/off rapidly, check for dirty filters, correct filter size, and any blocked return vents. 8) If dust persists quickly after a fresh filter and correct installation, inspect return vents and duct connections for leaks or blockage, and consider professional duct/vent cleaning or airflow diagnostics.",
+    "equipment_problem": "Clogged HVAC air filter and potential thermostat/fan setting causing short cycling or inefficient airflow",
+    "tools_required": [
+      "correct replacement HVAC air filter (exact size)",
+      "ladder (if needed)",
+      "flashlight",
+      "gloves",
+      "clean microfiber cloth or shop vacuum with brush attachment"
+    ],
+    "steps": [
+      "Set thermostat to OFF (or switch heating/cooling off) and turn off the HVAC power at the breaker for the air handler/heat pump if accessible.",
+      "Locate the filter in the return duct/air handler. Check the filter size markings (e.g., 16x25x1) and the airflow arrow direction.",
+      "Remove the old filter carefully; avoid shaking it. Note how it’s installed (especially the arrow direction).",
+      "Wipe the filter slot area with a dry microfiber cloth or lightly vacuum dust with a brush attachment (do not use water).",
+      "Install the new filter with the arrow pointing in the direction of airflow (typically toward the blower/air handler). Ensure it seals fully in the frame without gaps.",
+      "Set thermostat fan mode to AUTO. Confirm the system mode (HEAT/COOL) and setpoint temperature are reasonable (avoid extreme changes).",
+      "Turn power back on and run the system normally. Monitor run cycles for 15–30 minutes: normal operation should show longer cycles than very rapid on/off.",
+      "Check return vents: ensure they are not blocked by furniture, rugs, or curtains and that multiple return paths are unobstructed.",
+      "If the filter still clogs extremely fast after correct installation, schedule professional inspection for duct leaks, airflow restrictions, or consider vent/duct cleaning if warranted."
+    ],
+    "safety_info": "Turn off power before removing the filter to avoid moving parts and electrical hazards. Wear gloves and a mask if dust is heavy. Do not run the system with the filter removed. If you smell burning, see electrical arcing, or the system won’t start after filter replacement, stop and contact an HVAC professional.",
+    "tips": "Replace filters on a schedule (commonly every 1–3 months, more often with pets/allergies). Use the highest MERV rating your system can handle without restricting airflow. Keep thermostat fan on AUTO unless you need continuous circulation. If short cycling continues, measure temperature rise/drop or consult a pro—could indicate airflow issues, oversized equipment, or thermostat wiring problems. Regularly vacuum return grilles and ensure ductwork isn’t leaking or disconnected.",
+    "trace_id": "00974cf1-e9e1-4300-b5d3-44f73f28facc"
+  },
+  {
+    "question": "My top-load washing machine fills with water but won’t agitate or spin—what should I check and how can I troubleshoot it?",
+    "answer": "First confirm whether the lid switch/interlock is preventing operation, then check the drive system and motor control. Unplug the washer, inspect the lid switch and wiring for damage, test continuity of the lid switch, and verify the motor and belt/coupler (depending on model) are transferring power. If the lid switch tests open when closed, replace it. If the belt/coupler is slipping or broken, replace it and inspect the transmission/drive pulley for wear. Finally, check the capacitor (if equipped) and control board signals only after basic mechanical checks, since a failed capacitor can cause a motor to hum but not start.",
+    "equipment_problem": "Top-load washing machine: fills with water but does not agitate or spin; sometimes the motor hums and then stops.",
+    "tools_required": [
+      "multimeter",
+      "screwdriver set",
+      "needle-nose pliers",
+      "flashlight",
+      "soft brush",
+      "work gloves"
+    ],
+    "steps": [
+      "Unplug the washer and shut off the water supply valve.",
+      "Move the washer away from the wall and remove the cabinet top/front panel as needed to access the lid switch and motor/drive components (model-dependent).",
+      "Inspect the lid switch and door/latch mechanism for misalignment, broken plastic, or loose connectors; reseat any unplugged terminals.",
+      "Test the lid switch with a multimeter: with the lid closed, the switch should show continuity (or near-zero ohms) between the correct terminals; with the lid open it should read open circuit. Replace the lid switch if it fails this test.",
+      "If the lid switch is good, check the drive system: for belt-drive models, inspect the belt for cracks, glazing, or looseness and replace if damaged; for direct-drive models, check the drive coupler for cracks (common cause of no agitation/spin).",
+      "Spin the pulley by hand (with power disconnected) and confirm the drive train moves smoothly without grinding; look for seized bearings or stripped splines.",
+      "If the drive/coupler/belt is intact, locate the motor start/run capacitor (some models) and inspect wiring for damage; test capacitor if you have the proper meter range—replace if it’s out of spec.",
+      "Reassemble, plug in, and run a short diagnostic or test cycle to confirm agitation and spin resume."
+    ],
+    "safety_info": "Unplug the washer before removing panels to avoid shock and moving-part injuries. Keep hands clear of the drive area while testing with power on. If you must test components electrically, verify capacitor discharge (capacitors can retain charge). Wear gloves, and do not bypass the lid switch—doing so can create a dangerous operating condition.",
+    "tips": "Take photos of connector locations before unplugging to avoid mix-ups. Use the washer’s model number to find the correct lid-switch and capacitor specifications. If the motor hums but won’t start, prioritize lid switch and capacitor/drive checks before replacing a control board. If you smell burning or see melted wiring, stop and replace damaged harness components and consider professional service.",
+    "trace_id": "65181c3c-ed44-46ce-84d6-4b21a531b182"
+  },
+  {
+    "question": "How do I replace a worn or damaged wall outlet (receptacle) that no longer grips plugs securely, and how can I confirm it’s wired correctly?",
+    "answer": "Turn off the correct breaker, verify power is truly off, remove the old receptacle, identify the hot/neutral/ground wires, install the same type of new outlet, then test with a plug-in outlet tester and re-verify wiring before restoring power. If you find aluminum wiring, damaged insulation, loose/unknown wiring, or any sign of overheating/melting, stop and call a licensed electrician.",
+    "equipment_problem": "Outlet replacement: a receptacle that feels loose and may have worn terminals or a damaged device face.",
     "tools_required": [
       "non-contact voltage tester",
-      "multimeter (optional but recommended)",
-      "flathead screwdriver",
-      "Phillips screwdriver",
-      "wire stripper (only if minor trimming is needed)",
+      "multimeter or plug-in outlet tester",
+      "screwdriver (flathead and/or Phillips)",
+      "wire stripper (if needed)",
       "needle-nose pliers",
-      "insulated wire connectors (wire nuts)",
+      "voltage-rated wire nuts (if needed)",
       "flashlight"
     ],
     "steps": [
-      "Identify the correct circuit breaker and turn OFF power to the outlet.",
-      "Verify the outlet is de-energized: use a non-contact voltage tester on the outlet slots and, if possible, confirm with a multimeter at the terminals.",
-      "Remove the faceplate screws and pull the receptacle out of the box without disconnecting wires yet.",
-      "Inspect wiring: look for loose screws, broken conductors, loose backstab connections, damaged insulation, corrosion, or burn marks. If you see damage or melting, stop and call a professional.",
-      "Note the wiring positions: typically black (hot) to brass screw, white (neutral) to silver screw, and bare/green (ground) to green screw. If there are multiple wires, confirm they were landed on the correct terminals.",
-      "Disconnect the old receptacle by loosening terminal screws or removing it from the backstab holes (avoid reusing backstab if possible).",
-      "Connect the new receptacle using the same wiring: place hot/neutral/ground on the corresponding screws and tighten firmly (do not over-tighten). If multiple wires are present, land them together under the same screw using the receptacle’s terminal capacity.",
-      "Tuck wires back neatly into the electrical box, ensuring no bare copper/ground touches hot or neutral.",
-      "Attach the receptacle to the box, install the faceplate, and restore power at the breaker.",
-      "Test the outlet with a plug-in tester or a lamp. If it still doesn’t work, the problem may be upstream (loose connection in another device or a tripped breaker) and you should call an electrician."
+      "Identify the circuit: Turn off the breaker that feeds the outlet (not just the switch). If unsure, turn off the main and label the circuit if needed.",
+      "Verify power is off: Use a non-contact voltage tester at the outlet slots and around the face plate. For extra confidence, check with a multimeter or outlet tester (if you have one). Do not proceed if any voltage is detected.",
+      "Remove the wall cover and receptacle: Unscrew the receptacle from the electrical box. Gently pull it out without tugging wires.",
+      "Inspect wiring: Look for scorch marks, melted plastic, corrosion, loose connections, or damaged insulation. If present, stop and call a professional.",
+      "Identify wire connections: Note which wire is on which terminal. Typically, black = hot (brass), white = neutral (silver), green/bare = ground (green). If the outlet is wired with side screws or backstab terminals, replicate the same style.",
+      "Disconnect the old outlet: Loosen terminal screws (or remove the backstab wires if applicable). If wires are damaged, do not attempt to continue—replace the damaged section if you can do so safely and cleanly (only if wire length allows and insulation is intact).",
+      "Prepare wires: Ensure wire ends are straight and properly stripped (about 1/2 inch for most screw terminals). Do not leave frayed strands.",
+      "Install the new outlet: Match the outlet type (e.g., standard 15A/125V, GFCI if replacing with GFCI). Connect wires to the correct terminals (hot to brass, neutral to silver, ground to green/bare ground). Tighten screws firmly but do not over-torque.",
+      "If there are multiple wires: Use the existing wirenut connections or replace wirenuts only if needed and rated for the wire type. Keep hot/neutral/ground grouped correctly.",
+      "Mount the outlet: Carefully tuck wires back into the box, ensure no bare copper is exposed where it shouldn’t be, and screw the outlet into the box.",
+      "Restore power and test: Turn the breaker back on. Test the outlet with a plug-in outlet tester. It should indicate correct wiring (e.g., no open ground, no hot/neutral reversed).",
+      "Reinstall cover: If the tester is correct and the outlet works, reinstall the face plate and re-test with a simple device (lamp/phone charger)."
     ],
-    "safety_info": "Always shut OFF power at the breaker (not just the switch) and verify the outlet is truly dead using a non-contact tester and ideally a multimeter. Never rely solely on the breaker position. If you find burn marks, melted insulation, sparking, damaged conductors, aluminum wiring that appears oxidized, or you cannot confidently identify hot/neutral/ground, stop and hire a licensed electrician. If the outlet is part of a multi-outlet circuit and other outlets are affected, troubleshooting upstream can become unsafe—call a professional.",
-    "tips": "Use a receptacle with the correct rating (15A for typical circuits or 20A where required). Replace with the same type (GFCI or tamper-resistant if the existing one is such). Prefer screw terminals over backstab connections for better reliability. Tighten terminal screws firmly and keep the ground wire securely attached to the green screw. If other outlets on the same circuit stopped working, check for tripped GFCI/AFCI devices upstream before replacing more hardware. Keep the wiring organized so it doesn’t get pinched when the receptacle is pushed back into the box.",
-    "trace_id": "84a36dd6-cfdf-4403-a535-1e82ffa4ca72"
+    "safety_info": "Shut off power at the breaker and verify with a voltage tester—never rely on the switch position. Treat every wire as live until tested. Do not work on circuits involving aluminum wiring, damaged conductors, signs of overheating (burning smell, melted insulation), or wiring you cannot confidently identify. If you find burn marks, loose connections behind the outlet, or the outlet tester shows reversed hot/neutral or missing ground, stop and call a licensed electrician. If the outlet is part of a multi-wire branch circuit, ensure the handle-tied breakers are managed correctly (call a professional if you’re unsure).",
+    "tips": "Use the same receptacle rating and type as the existing one (e.g., 15A/125V). Prefer screw-terminal connections over backstab for better long-term reliability. Tighten terminal screws firmly and ensure the ground is securely connected. If replacing a GFCI outlet, follow the device’s LINE/LOAD markings so downstream protection works correctly. Keep the box cover plate properly grounded and avoid pinching wires when pushing the receptacle back into the box.",
+    "trace_id": "45a8b96d-14cd-4cc6-9e1f-f2c4b96d9e61"
   },
   {
-    "question": "My HVAC system runs but the air coming from the vents is weak. I changed nothing in months—could a dirty air filter or thermostat setting be the cause, and what should I check first?",
-    "answer": "Yes. Start with the most common causes: filter restriction and thermostat settings. 1) Verify the thermostat mode (Heat/Cool/Off) and fan setting (set to Auto). 2) Check the air filter for dust loading and airflow restriction; replace it with the correct size and MERV rating. 3) Inspect accessible supply/return vents for obstructions and ensure registers are open. 4) If airflow is still weak after the filter change, check for obvious issues like closed dampers, blocked return vents, or a tripped breaker. If problems persist, the indoor blower motor, ductwork, or outdoor unit may need professional inspection.",
-    "equipment_problem": "Dirty or incorrectly sized HVAC air filter and/or thermostat fan/mode misconfiguration causing weak airflow",
+    "question": "My top-load washing machine fills and then stops with an error, and the drain hose seems to gurgle. How can I troubleshoot and fix a common cause of this behavior?",
+    "answer": "1) Unplug the washer and inspect the drain hose connection for clogs or kinks. 2) Verify the water level is correct by checking the inlet screens and ensuring the fill valve is supplying water. 3) Check the pressure switch hose/tubing for blockage or disconnection (a stuck/blocked pressure switch can cause the machine to stop after filling). 4) Inspect the lid switch/lock (if the lid switch fails, many models stop mid-cycle). 5) Test the drain pump operation: remove power, access the pump/filter area, clear debris, and confirm the pump can spin freely. 6) Reassemble, run a short diagnostic/quick cycle, and confirm proper draining and spin.",
+    "equipment_problem": "Top-load washing machine that fills but stops mid-cycle; gurgling from drain hose suggests poor draining or a pressure/lock issue. Likely causes include clogged drain pump/filter, kinked/blocked drain hose, blocked pressure switch tubing, or a failing lid switch.",
+    "tools_required": [
+      "multimeter",
+      "flashlight",
+      "towels",
+      "bucket or shallow pan",
+      "screwdriver set",
+      "needle-nose pliers",
+      "soft brush or bottle brush",
+      "work gloves"
+    ],
+    "steps": [
+      "Unplug the washer (or switch off the breaker) and pull the unit away from the wall for access to the drain hose and rear/pump area.",
+      "Check the drain hose for kinks, crushed sections, or improper height. Ensure the hose isn’t inserted too far into the standpipe (typically only a few inches).",
+      "Inspect and clean the drain pump filter/catch (if your model has an access panel). Place towels and a bucket under the filter, then remove debris and rinse the filter.",
+      "Verify the drain pump can move freely: with power disconnected, carefully check for obstructions in the pump intake and verify the impeller isn’t jammed.",
+      "Check the pressure switch tubing: locate the small air hose from the tub/pressure sensor to the switch. Ensure it’s firmly seated and not clogged; clear any debris with gentle airflow or a soft brush (no aggressive tools).",
+      "Inspect the lid switch/lock mechanism: look for misalignment, damage, or a loose connector. If available, test continuity with a multimeter while actuating the switch.",
+      "Clean inlet screens (if the machine also reports fill-related behavior): remove the hot/cold hoses at the valve, clean screens, and reinstall securely.",
+      "Reassemble, plug back in, and run a short diagnostic/quick cycle to confirm it drains and completes the cycle without stopping."
+    ],
+    "safety_info": "Disconnect power before any internal inspection. Water may remain in the tub and pump area—use towels and a bucket to prevent electrical hazards. Do not put hands into the pump area while powered. If you smell burning or see melted wiring, stop and replace the affected component or call a technician.",
+    "tips": "Take photos of wire harnesses and hose routing before disconnecting anything. Record the exact error code (if shown) because it narrows the fault (pressure vs. lid vs. drain). When clearing the pump filter, remove hair and lint thoroughly; small debris can still prevent proper pump flow. If the pressure switch tubing is clear but the washer still stops, test the pressure switch with a multimeter or replace it based on model-specific specs.",
+    "trace_id": "dda07686-4d2b-46f8-b4b5-fd13ba04ee43"
+  },
+  {
+    "question": "Why won’t my dishwasher drain after a cycle, and what can I do to fix it at home?",
+    "answer": "If the dishwasher leaves standing water, check the common drain path: filter/sump, drain hose, and the drain pump. First remove and clean the filter and sump area, then inspect the drain hose for clogs or kinks and confirm it’s properly connected. Next, check the drain pump: look for obstructions in the pump inlet and verify the pump can spin freely. If the pump is jammed or the impeller won’t turn, replace the drain pump. Finally, confirm proper plumbing: the high-loop/garbage disposal connection should be correct and the disposal drain plug (if present) must be removed. Reset the unit and run a short drain/test cycle after reassembly.",
+    "equipment_problem": "Dishwasher (built-in) that won’t drain; cycle ends with standing water in the bottom and dishes remain wet.",
+    "tools_required": [
+      "screwdriver",
+      "bucket or shallow pan",
+      "towel or sponge",
+      "needle-nose pliers",
+      "multimeter (optional)",
+      "flashlight"
+    ],
+    "steps": [
+      "Turn off the dishwasher at the breaker (or unplug) to remove electrical hazard before touching internal parts.",
+      "Remove the bottom rack and unscrew/lift out the filter assembly; take out any coarse debris (labels, seeds, glass, food chunks).",
+      "Use a sponge or small cup to remove standing water from the sump area.",
+      "Check the sump area and pump inlet for obstructions; remove any debris and rinse the filter thoroughly.",
+      "Inspect the drain hose connection under the sink: look for kinks, crushed sections, or loose clamps; ensure the hose isn’t installed too low (should form a high loop).",
+      "If connected to a garbage disposal, confirm the dishwasher drain plug inside the disposal is removed (often required for proper draining).",
+      "Locate the drain pump area (varies by model). With power still off, check if the pump impeller is blocked; remove the obstruction carefully.",
+      "If the impeller won’t rotate freely or the pump sounds dead, test/replace the drain pump as needed (some pumps have replaceable modules).",
+      "Reassemble the filter and run a short cycle or use the drain cycle to verify water clears."
+    ],
+    "safety_info": "Disconnect power at the breaker/unplug before servicing. Dishwasher water may be hot—allow cooling. Wear eye protection when removing debris. Do not force the filter or pump components if resistance is high; you can damage seals or wiring. If you find electrical faults, water near wiring, or persistent leaks, stop and consult a qualified technician.",
+    "tips": "Photograph the hose/filter layout before disassembly for easier reassembly. Clean the filter regularly to prevent future clogs. Use a flashlight to check the sump for small items that don’t show in the filter basket. If draining works after cleaning but fails again, inspect the drain hose routing and ensure the disposal connection is correct. For diagnostic confirmation, you can run a multimeter continuity check on the drain pump only if you’re comfortable working with appliance wiring and you’ve verified power is off.",
+    "trace_id": "d1fe49e6-6d00-45e9-8698-391c2198e756"
+  },
+  {
+    "question": "My central AC blows air but the airflow is weak and the house doesn’t cool well. What should I check first and how do I change the air filter and inspect the return/return vent for basic blockages?",
+    "answer": "Start with the most common, low-risk causes: a dirty filter and blocked return vents. 1) Turn off power to the HVAC system before removing the filter. 2) Replace the filter with the correct size and MERV rating (follow the system label; common is MERV 8–11). 3) Inspect the return grille and duct area for dust buildup or obstructions, and vacuum debris from the grille and accessible duct opening. 4) After reassembly, turn power back on and verify the blower runs normally and air feels stronger. Seasonal note: check filters every 1–3 months during heavy cooling season; during spring/fall transitions, inspect monthly.",
+    "equipment_problem": "Clogged HVAC air filter and/or blocked return vent causing reduced airflow and poor cooling performance",
+    "tools_required": [
+      "correct size HVAC air filter",
+      "vacuum with brush attachment",
+      "flashlight",
+      "gloves",
+      "screwdriver or nut driver (if grille is secured)"
+    ],
+    "steps": [
+      "Set the thermostat to OFF (or set cooling to OFF), then switch off power to the indoor air handler/air handler furnace at the breaker.",
+      "Locate the air filter (typically in the return duct or air handler). Note the filter size and airflow direction arrow.",
+      "Remove the old filter carefully; check for heavy dust, tears, or incorrect sizing.",
+      "Install a new filter of the exact dimensions and proper airflow direction (arrow pointing toward the blower/air handler).",
+      "Inspect the return vent/grille. Remove the grille if it’s easy/secured with screws, and vacuum visible dust from the grille and accessible duct opening.",
+      "Check for obvious obstructions (stored items, collapsed duct insulation, or excessive debris). Do not push tools deep into ductwork.",
+      "Reinstall the grille/cover securely, then turn power back on.",
+      "Set thermostat to COOL and verify the blower operates and airflow feels stronger at multiple vents."
+    ],
+    "safety_info": "Turn off electrical power at the breaker before removing the filter or opening the air handler area. Wear gloves and avoid breathing dust. Do not use compressed air or disturb insulation excessively. If you smell burning, see water pooling, or hear grinding noises, stop and call a professional.",
+    "tips": "Write the filter size and MERV rating on the filter box or a note for future replacements. If airflow is still weak after a fresh filter, check that all supply registers are open and not blocked by furniture or rugs. Consider using a filter with proper MERV for your system—too-restrictive filters can reduce airflow. For best cooling performance, replace filters before peak summer and after major home renovations or dusty seasons.",
+    "trace_id": "a90a848b-f51b-45a8-b028-2eea2f922d5e"
+  },
+  {
+    "question": "My refrigerator isn’t cooling, and the freezer is cold. What should I check before calling for service?",
+    "answer": "If the freezer is cold but the fresh-food compartment isn’t, the most common cause is an airflow or defrost-related issue in the refrigerator section. Check the damper (air control) and listen for the damper/air fan operation, then inspect and clear airflow paths and verify the defrost system isn’t stuck. If the evaporator coil is heavily iced over, the unit likely needs defrost diagnosis (defrost heater, thermostat/thermistor, or control board). If there’s little/no ice but airflow is blocked or the damper isn’t opening, focus on the damper motor/positioning and the air inlet vents.",
+    "equipment_problem": "Refrigerator (side-by-side or top-freezer) not cooling in the refrigerator compartment; freezer stays cold. Common symptoms include warm refrigerator section, possible airflow restriction, and evaporator coil icing.",
+    "tools_required": [
+      "multimeter",
+      "flashlight",
+      "screwdriver set",
+      "soft brush or vacuum with brush attachment",
+      "hair dryer (low/medium) or steamer (optional)"
+    ],
+    "steps": [
+      "Unplug the refrigerator or switch off power to the unit at the breaker before removing panels.",
+      "Verify the freezer temperature is truly cold (e.g., ~0°F / -18°C) and that the refrigerator section is warm.",
+      "Locate the evaporator cover/panel in the freezer (often behind a rear panel). Inspect the evaporator coil for frost/ice buildup.",
+      "If the coil is heavily iced over, perform a controlled thaw: use a hair dryer on LOW/medium held at a safe distance or allow natural thawing with the refrigerator unplugged until ice melts. Do not chip ice or use sharp tools.",
+      "Check for blocked airflow: clear any ice chunks, debris, or blocked vents leading from the freezer to the refrigerator compartment.",
+      "Find the air damper/air diffuser that controls airflow to the refrigerator section. With power restored, observe whether it opens/closes during cooling cycles (some models have a visible damper position).",
+      "Use a flashlight to check the refrigerator air inlet area for obstructions (ice, food packaging, or collapsed vents).",
+      "If there is minimal ice but airflow/damper doesn’t operate, test the damper motor/actuator and associated wiring (with a multimeter) for continuity and proper power when called to open.",
+      "If there is heavy ice and it refreezes quickly after thawing, test the defrost components: defrost heater continuity and the defrost thermostat/thermistor resistance per the service label/specs, and verify the defrost control output if accessible.",
+      "Reassemble panels/filters, plug back in, and monitor temperatures for 12–24 hours."
+    ],
+    "safety_info": "Unplug power before removing any covers or touching wiring. Avoid spraying water directly into electrical components. Do not chip or puncture the evaporator coil. When using a hair dryer, keep it on low/medium, keep distance from plastic parts, and never overheat wiring or insulation. If you smell burning or see melted insulation, stop and call a qualified technician.",
+    "tips": "Take clear photos of wiring connectors and damper linkages before removal. Note whether the evaporator coil is evenly frosted or mostly iced—uneven frosting can indicate airflow issues. After thawing, listen for fan operation and damper actuation; many faults reveal themselves by whether air movement resumes. If you have to thaw repeatedly within a day, prioritize defrost system testing over damper troubleshooting. Keep the refrigerator door closed to prevent additional temperature swings while diagnosing.",
+    "trace_id": "b3afeb4a-9681-4fca-829c-f90d1fc76c38"
+  },
+  {
+    "question": "How can I safely replace a worn 2-prong outlet that isn’t holding a plug securely, and confirm the wiring is correct?",
+    "answer": "1) Turn OFF the breaker for that outlet and verify power is truly off using a non-contact voltage tester (and, if needed, a multimeter). 2) Remove the outlet cover and outlet screws, then pull the outlet out carefully. 3) Check the wiring: hot (usually black), neutral (usually white), and ground (bare copper/green). If there’s aluminum wiring, damaged insulation, or loose/burned conductors, stop and call a professional. 4) Note wire positions (take a photo) before disconnecting. 5) Move wires to the same terminals on the new matching outlet (same type: 2-prong vs 3-prong, same rating/brand if possible). 6) Tighten screws firmly, avoid pinching wires, and ensure no copper is exposed where it shouldn’t be. 7) Push wires back neatly, mount the outlet, and attach the cover plate. 8) Turn the breaker ON and test: use a plug-in outlet tester to confirm correct wiring (and polarity). If the tester indicates wrong wiring or no power, turn OFF again and troubleshoot or call an electrician.",
+    "equipment_problem": "Outlet replacement for a worn receptacle that won’t hold a plug securely; verify correct hot/neutral/ground connections during replacement.",
+    "tools_required": [
+      "non-contact voltage tester",
+      "screwdriver (flathead/Phillips as needed)",
+      "needle-nose pliers",
+      "wire stripper (if minor trimming is needed)",
+      "outlet tester (3-light plug-in tester)",
+      "flashlight",
+      "multimeter (optional but recommended)"
+    ],
+    "steps": [
+      "Turn OFF the breaker for the outlet (not just the switch).",
+      "Remove the outlet cover and test for power at the outlet using a non-contact voltage tester; confirm with a multimeter if available.",
+      "Unscrew the outlet and gently pull it out to access the wiring.",
+      "Take clear photos and note which wires connect to which terminals (hot/neutral/ground).",
+      "Disconnect wires from the old outlet (loosen terminal screws or release the backstab/side clamp type).",
+      "Inspect wires for damage, scorching, corrosion, or loose strands; if found, stop and call a professional.",
+      "Connect wires to the new matching receptacle: hot to brass-colored screw, neutral to silver-colored screw, ground to green-colored screw or ground terminal (if present).",
+      "Tighten terminal screws securely and ensure wires are not loose; trim only if needed and re-strip to proper length.",
+      "Fold wires back carefully, mount the outlet, and reinstall the cover plate.",
+      "Restore breaker power and test with an outlet tester to confirm correct wiring and polarity.",
+      "If the tester shows faults (open ground, reversed polarity, etc.) or the outlet still doesn’t work reliably, turn OFF power and call an electrician."
+    ],
+    "safety_info": "Always shut OFF the correct breaker and verify power is truly off with a voltage tester before touching any wiring. Never rely on the wall switch being OFF. Use a properly rated replacement outlet (match type and rating). Do not work on circuits with signs of overheating (burning smell, melted insulation), damaged/aluminum wiring, repeated breaker trips, or confusing/unknown wiring—stop and contact a licensed electrician. If you find no ground conductor where the outlet type requires ground, or if you’re unsure about grounding/older wiring (e.g., knob-and-tube, aluminum branch circuits), call a professional. Keep the work dry and avoid touching metal parts while energized.",
+    "tips": "Use the same outlet type (2-prong vs 3-prong) and rating; don’t “upgrade” receptacles without understanding grounding. Tighten terminal screws firmly (loose connections cause heat and failure). Prefer screw-terminal connections over backstab when possible. Photograph wiring before disconnecting to prevent hot/neutral mistakes. If multiple wires are on one terminal, ensure the new outlet supports that configuration (or use approved pigtails). After installation, test the outlet and lightly tug wires to confirm they’re secure.",
+    "trace_id": "66199ffe-bf5e-4354-9956-939cb643d3e9"
+  },
+  {
+    "question": "My top-load washing machine isn’t draining and the tub won’t spin—what should I check and how can I fix a clogged drain pump or drain hose?",
+    "answer": "1) Unplug the washer. 2) Check for standing water; if present, use a shallow drain pan and drain via the emergency drain hose (if equipped) or by carefully draining through the drain hose to a bucket. 3) Inspect the drain hose for kinks, siphoning issues, or a clog—make sure it’s not pushed too far into the standpipe and that the standpipe height is correct. 4) Remove power to the pump area (access panel/bottom cover). 5) Check the drain pump inlet for debris (coins, lint, socks). 6) Verify the pump impeller can spin freely by hand (with power disconnected). 7) Reassemble, restore connections, and test a short drain/spin cycle. If the pump hums but doesn’t move water, the pump may be failing and likely needs replacement.",
+    "equipment_problem": "Top-load washing machine not draining; tub won’t spin. Likely clogged drain hose or debris in the drain pump.",
+    "tools_required": [
+      "multimeter",
+      "flashlight",
+      "bucket or shallow drain pan",
+      "screwdriver set",
+      "adjustable pliers",
+      "towels",
+      "work gloves",
+      "shop vacuum (optional)"
+    ],
+    "steps": [
+      "Unplug the washer and shut off the water supply valves (if you’ll open the cabinet/hoses).",
+      "Remove the lower access panel (or front kick panel) to reach the drain pump area; lay towels to catch residual water.",
+      "Check the drain hose: straighten any kinks, inspect for clogs, and confirm it’s connected tightly to the washer and drain standpipe.",
+      "If the washer has an emergency drain hose, route it to a bucket and drain the remaining water; otherwise, carefully lower the drain hose end into a bucket (do not splash electrical parts).",
+      "Inspect the pump inlet: look for debris at the pump coupling/inlet screen; remove obstructions carefully.",
+      "With power disconnected, check the pump impeller for free movement (should spin without grinding).",
+      "If accessible, check the pump electrical connector for corrosion/looseness; optionally use a multimeter to verify continuity of the pump motor.",
+      "Reassemble the access panel, reconnect hoses, and run a short drain/spin cycle to confirm proper water removal."
+    ],
+    "safety_info": "Unplug the washer before touching internal components. Treat any standing water as electrically risky—avoid contact with wiring and control boards. Wear gloves and use towels to prevent slips and water damage. Do not force the drain hose connection; leaks can contact electrical parts. If you smell burning or see melted wiring, stop and call a technician.",
+    "tips": "Take a photo before disconnecting hoses/connectors so you can reassemble correctly. Keep the standpipe height within the washer’s manual specs (often ~18–30 in / 46–76 cm) to prevent siphoning and drainage failures. If the pump impeller is jammed with debris, clean thoroughly and check the surrounding sump area for additional lint. If the pump has continuity but still won’t pump (or repeatedly trips), replace the drain pump assembly rather than continuing to troubleshoot the blockage.",
+    "trace_id": "36983b4d-40dc-4dc8-8030-ff50dd03c835"
+  },
+  {
+    "question": "How do I repair a small hole in drywall (about 1–2 inches) and make it look smooth enough to paint?",
+    "answer": "For a small hole (1–2 in.), use a self-adhesive drywall patch or a backing strip, then apply joint compound in thin layers, sand between coats, and prime before paint. Start by cleaning the edges, backing the hole if needed, applying patch material, then spreading setting-type or all-purpose joint compound in 2–3 passes. Feather the edges wider each coat, sand smooth, remove dust, prime, and finally paint.",
+    "equipment_problem": "Small drywall hole (1–2 inches) with torn paper edges",
+    "tools_required": [
+      "utility knife",
+      "drywall saw or keyhole saw (optional)",
+      "measuring tape (optional)",
+      "putty knife (2 in.)",
+      "putty knife (4–6 in.)",
+      "sandpaper (120 and 220 grit) or sanding sponge",
+      "dust mask",
+      "safety glasses",
+      "paint roller or brush",
+      "primer",
+      "caulk/small brush (optional)",
+      "drill/driver (optional, for backing screws)",
+      "stud finder (optional)"
+    ],
+    "steps": [
+      "Assess the hole: If paper edges are loose, cut back to solid drywall with a utility knife so you have clean, straight edges.",
+      "If the hole has no backing, add one: Cut a small backing piece (scrap wood or a drywall backing clip) and secure it behind the hole so the patch has something to fasten to.",
+      "Install the patch: Use a self-adhesive drywall patch sized to the hole, pressing firmly and smoothing the edges. If using a paper mesh patch, center it over the hole and hold it in place with joint compound.",
+      "First coat: Apply a thin layer of joint compound over the patch using a 2-inch putty knife, ensuring the patch is fully covered and the surface is slightly proud of the drywall.",
+      "Let it dry: Follow the product label dry time (setting compounds are faster; all-purpose may take longer).",
+      "Second coat (feathering): Apply a wider, thinner layer (use a 4–6 inch putty knife) to blend the repair into the surrounding wall.",
+      "Repeat for a third coat if needed: Continue feathering outward until the surface is smooth and level with the wall.",
+      "Sand: Once fully dry, sand with 120 grit to level, then 220 grit to smooth. Wipe away all dust with a dry cloth.",
+      "Prime: Apply drywall primer to the repaired area and any exposed paper/compound so paint sheen matches.",
+      "Paint: Paint the wall using the same paint type and sheen as the rest of the room; feather paint edges as needed."
+    ],
+    "safety_info": "Wear safety glasses and a dust mask when sanding. Keep the area ventilated. Turn off power to nearby outlets if you’re working close to electrical fixtures. Drywall dust can be irritating—vacuum with a HEPA shop vac if possible and avoid dry sweeping.",
+    "tips": "Use thin coats—thicker layers crack and take longer to dry. Feather each coat wider than the last for a seamless blend. If the wall is textured (orange peel/knockdown), you may need to lightly match the texture after priming (use a small amount of texture compound and a stippling/rolling technique). For best results, sand only after the compound is fully dry and wipe dust thoroughly before priming.",
+    "trace_id": "79cd9a3a-cb98-49df-81ca-6f87b8ee8005"
+  },
+  {
+    "question": "My top-load washing machine won’t drain and the clothes stay soaking wet. What should I check and how can I fix it?",
+    "answer": "First confirm the unit is actually in a drain/spin cycle and not overloaded. Then check for a clogged drain hose and pump filter (if present). Inspect the pump for debris and verify the drain hose isn’t kinked or inserted too far into the standpipe. Finally, test the lid switch/door lock (for some models) and check for error codes or failed pump operation. If the pump runs but water doesn’t exit, focus on hose/standpipe restrictions; if the pump doesn’t run, suspect the pump, wiring, or control board.",
+    "equipment_problem": "Top-load washing machine that won’t drain; water remains in the tub and clothes are very wet at cycle end.",
+    "tools_required": [
+      "flathead screwdriver",
+      "socket/ratchet set",
+      "bucket or drain pan",
+      "flashlight",
+      "towels",
+      "multimeter (optional)"
+    ],
+    "steps": [
+      "Unplug the washer (or switch off the breaker) and place towels around the base; have a bucket ready.",
+      "Check the drain hose: pull it out from behind the washer, inspect for kinks, and confirm it’s not crushed. Make sure the hose isn’t clogged by removing the hose end if accessible.",
+      "Verify standpipe/house drain height: the drain hose should typically be inserted about 4–6 in (10–15 cm) into the standpipe (or per your manual). Too deep can cause siphoning/drain issues.",
+      "If your model has a pump filter/access panel (common on many washers), open it carefully and drain remaining water into the bucket.",
+      "Remove the pump filter and clear debris (coins, hair, lint clumps, small socks). Reinstall the filter securely.",
+      "Look for obstructions in the pump intake by gently rotating/inspecting the pump area (without forcing parts). Ensure the impeller can spin freely.",
+      "Try a drain/spin test cycle. Observe whether the pump runs and whether water exits the hose.",
+      "If the pump does not run, check for error codes on the display and inspect wiring to the pump and lid/door lock switch (some models won’t drain if the lid switch isn’t satisfied).",
+      "If the pump runs but water doesn’t leave, re-check the drain hose connection and the home drain for blockage; test by temporarily routing the hose into a bucket (only briefly and safely) to confirm pump output."
+    ],
+    "safety_info": "Unplug power before opening panels or handling the pump area. Water may be hot or dirty—use towels, wear gloves if needed, and avoid touching electrical components with wet hands. Do not bypass safety switches. If you see burning smell, sparking, or repeated tripping breakers, stop and contact a technician.",
+    "tips": "Take a quick photo of hose routing before disconnecting. Clean the pump filter periodically to prevent recurrence. Avoid overloading and ensure items are not caught in the pump intake area. Keep a flashlight handy to inspect the hose end for blockages. If you have a multimeter, you can confirm pump continuity (power disconnected) to distinguish a failed pump from a clog.",
+    "trace_id": "c9aa0e74-a7a1-4523-a386-e8dc13934e2b"
+  },
+  {
+    "question": "My top-load washing machine won’t drain and just keeps filling, then stops with standing water. What should I check and how can I fix it?",
+    "answer": "1) Unplug the washer. 2) Check the lid switch operation (if it won’t drain, it may not enter the spin/drain cycle). 3) Inspect and clear the drain hose for clogs and confirm it’s not kinked or installed too high. 4) Check the pump filter/coin trap (if the model has one) and remove debris. 5) Verify the drain pump runs during the drain step; if it’s silent or fails, test the pump for power/continuity and replace if defective. 6) Clear any obstruction in the pump inlet and reassemble. 7) Test a drain/spin cycle and confirm water fully evacuates.",
+    "equipment_problem": "Top-load washing machine: won’t drain; water remains in the tub and the cycle stalls (often due to clogged pump/coin trap, blocked drain hose, or faulty lid switch/pump).",
+    "tools_required": [
+      "multimeter",
+      "flashlight",
+      "bucket or shallow pan",
+      "towels",
+      "screwdriver (Phillips/flathead)",
+      "pliers (optional)",
+      "brush or small wire tool"
+    ],
+    "steps": [
+      "Unplug the washer and turn off the water supply valves if you need to move the unit.",
+      "Move towels around the base and place a bucket/pan under the drain hose connection to catch residual water.",
+      "Inspect the drain hose: straighten any kinks, confirm the hose isn’t crushed, and check for clogs at the standpipe/drain connection.",
+      "If your model has a pump/coin trap access panel (often front/bottom), open it and remove the filter/strainer.",
+      "Clean out debris (coins, lint clumps, socks) and rinse the filter/area; ensure the impeller can spin freely.",
+      "Check the lid switch: with power OFF, inspect the switch wiring for loose connections; look for worn or broken actuator parts.",
+      "Plug the washer back in and run a Drain/Spin or Rinse/Spin cycle while watching for pump operation (you should hear the pump run).",
+      "If the pump doesn’t run, unplug again and use a multimeter to verify power at the pump connector during the drain step; if power is present but pump is silent, test pump resistance/continuity per the service label and replace if out of spec.",
+      "Reassemble everything, ensure hoses are routed correctly, then run a full test cycle to confirm proper draining."
+    ],
+    "safety_info": "Unplug the washer before opening panels or touching wiring. Water and electronics are a dangerous combination—dry components thoroughly before reconnecting. Use caution when draining residual water to avoid slipping. If you’re unsure about electrical testing, stop and contact a qualified technician.",
+    "tips": "Take a quick photo of hose routing and wiring before disassembly. Common causes are coin trap clogging and drain hose restrictions; address those first before ordering parts. After clearing the pump, confirm the impeller turns freely by hand. If the lid switch is failing, the washer may refuse to enter spin/drain—replacing the switch is often faster than repeatedly clearing clogs.",
+    "trace_id": "279b2884-5193-4749-aadb-682733888edb"
+  },
+  {
+    "question": "My HVAC air filter keeps getting clogged quickly and the airflow feels weak—how can I safely check and replace the filter and confirm the system is running normally?",
+    "answer": "1) Turn off the HVAC at the thermostat and the system switch/breaker. 2) Locate the return-air filter slot (usually near the air handler or furnace blower). 3) Note the filter size and direction of airflow arrows. 4) Inspect the old filter: if it’s very dirty or damaged, replace it; if it’s only slightly dusty, still replace if it’s past its scheduled interval. 5) Install the new filter with the arrow pointing toward the blower/air handler. 6) Ensure the filter is seated firmly with no gaps (gaps bypass filtration). 7) Turn the system back on and check that air is moving strongly from supply vents and that the thermostat is calling for heat/cooling. 8) If airflow remains weak after a fresh filter, check for closed/blocked vents or a dirty return grille; if problems persist, it may indicate blower/duct issues requiring service. Seasonal consideration: replace filters more often during high-demand seasons (summer cooling/winter heating) and if you have pets, allergies, or heavy dust.",
+    "equipment_problem": "Clogged air filter causing weak airflow and poor heating/cooling performance",
     "tools_required": [
       "correct replacement HVAC air filter",
       "flashlight",
       "clean cloth or vacuum with brush attachment",
-      "thermostat access cover tool (if needed)",
-      "basic screwdriver (if needed)"
+      "work gloves"
     ],
     "steps": [
-      "Set the thermostat to the correct mode (Heat or Cool) and ensure the fan is set to Auto (not On).",
-      "Locate the indoor air filter (usually in the return duct grille or blower compartment). Turn off the HVAC system at the thermostat if needed for access.",
-      "Remove the filter carefully and note its size and airflow direction markings (arrows). Hold it up to light—if it’s dark, heavily dust-loaded, or airflow seems blocked, replace it.",
-      "Install a new filter of the exact same dimensions and correct airflow direction. Do not force a mismatched size.",
-      "Check supply and return vents: remove visible debris, ensure registers are open, and confirm return grilles are not blocked by furniture, curtains, or rugs.",
-      "Restore power (if you turned it off) and run the system on a call for cooling/heating. Confirm airflow improves at multiple vents.",
-      "If airflow remains weak, check for a tripped breaker or blown furnace/air-handler fuse, and look for any obviously blocked duct openings or collapsed flex duct sections."
+      "Set thermostat to OFF and turn off the HVAC system at the thermostat and/or the nearby service switch/breaker.",
+      "Find the return-air filter location (often at the air handler/furnace or behind the return grille).",
+      "Pull out the existing filter and note its size and the airflow arrow direction.",
+      "Inspect the filter condition; if it’s heavily loaded with dust, replace it rather than attempting to clean it.",
+      "If applicable, vacuum dust from the filter slot and return grille using a brush attachment (avoid damaging components).",
+      "Install the new filter with the airflow arrow pointing toward the blower/air handler (toward the HVAC).",
+      "Reinstall the filter cover/retainer so the filter sits flush with no bypass gaps.",
+      "Restore power, set thermostat to a heating/cooling mode, and verify strong airflow at multiple vents."
     ],
-    "safety_info": "Turn off power at the thermostat (and breaker if you need to open the air handler) before removing the filter or accessing the blower compartment. Avoid touching moving blower parts. If you smell burning, see smoke, or the system trips breakers repeatedly, stop and call a licensed HVAC technician. Use caution when working near electrical panels and follow local electrical safety practices.",
-    "tips": "Replace filters on a regular schedule (typically every 1–3 months during heavy seasonal use; more often for pets or allergies). Use the filter size and MERV rating recommended by your system/installer—higher MERV can restrict airflow if the system isn’t designed for it. Keep return vents unobstructed and consider having ducts inspected if airflow problems persist after filter and thermostat checks.",
-    "trace_id": "5f5cfbaf-6773-4c68-8d6a-6bf01ab0f302"
+    "safety_info": "Turn off power before removing the filter to avoid moving parts and electrical hazards. Do not run the system with missing or incorrectly oriented filters. Avoid using compressed air on filters (can disperse dust). If you smell burning, see melted components, or hear unusual grinding sounds, stop and contact an HVAC professional.",
+    "tips": "Use the exact filter dimensions and recommended MERV rating for your system; higher MERV can improve filtration but may restrict airflow if the blower is marginal. Consider reducing clogging by sealing return leaks, keeping supply/return vents unblocked, and using return-air grilles with proper fit. Mark your calendar: typical replacement is every 1–3 months, but increase frequency during peak seasons or if you have pets/allergies.",
+    "trace_id": "63c21cef-e646-492d-9bc6-3b7670304b5f"
   },
   {
-    "question": "How can I replace a worn 3-prong outlet (with a loose feel) in my wall while keeping the wiring safe?",
-    "answer": "1) Turn OFF power at the breaker for that outlet and verify it’s dead with a non-contact voltage tester. 2) Remove the outlet cover and unscrew the receptacle. 3) Pull it out carefully and inspect for damage, scorching, or loose/overheated wires. 4) If there’s no visible damage, note wire connections: hot (usually black), neutral (usually white), and ground (bare copper or green). 5) If the old outlet has side screw connections, move the same wires to the matching terminals on the new outlet (Hot to brass, Neutral to silver, Ground to green/bare). 6) Re-tighten terminal screws firmly (don’t over-torque). 7) If wires are back-stabbed, prefer screw terminals if possible for better long-term contact. 8) Tuck wires neatly, ensure no wire is pinched, mount the new outlet, and reinstall the cover. 9) Restore power and test using a receptacle tester (and optionally confirm with a multimeter). If you find aluminum wiring, damaged insulation, burn marks, or uncertain wiring, stop and call a licensed electrician.",
-    "equipment_problem": "Worn 3-prong outlet with a loose connection (possible overheating) where the plug intermittently loses power.",
+    "question": "My furnace runs, but the airflow is weak and the filter looks dirty. How do I change the HVAC air filter and check for simple airflow problems before calling a technician?",
+    "answer": "1) Turn off power to the furnace/air handler. 2) Remove the old filter and note its size and airflow direction arrow. 3) Install a new correctly sized filter with the arrow pointing toward the airflow. 4) Check the blower compartment door seal and ensure the filter fits snugly (no gaps). 5) Inspect the return vent grille for dust or blockages and vacuum it. 6) If airflow is still weak, verify the thermostat fan setting is set to AUTO (not ON) and confirm correct heating mode. 7) Check that supply/return vents are open and not blocked by furniture, rugs, or registers. 8) Restart power and test heating operation; if airflow remains weak after a fresh filter and clear vents, it may indicate a blower motor, duct restriction, or dirty evaporator/heat exchanger—schedule service.",
+    "equipment_problem": "Clogged HVAC air filter causing restricted airflow and weak heating performance (basic airflow troubleshooting).",
     "tools_required": [
-      "non-contact voltage tester",
-      "receptacle tester",
-      "flathead screwdriver",
-      "Phillips screwdriver",
-      "needle-nose pliers",
-      "wire stripper (if needed)",
-      "utility knife (if needed)",
-      "small flashlight"
-    ],
-    "steps": [
-      "Turn OFF the breaker that feeds the outlet.",
-      "Verify power is OFF by testing the outlet with a non-contact voltage tester.",
-      "Remove the outlet cover plate and unscrew the receptacle.",
-      "Gently pull the receptacle out; inspect wires for discoloration, melting, or loose strands.",
-      "Identify terminals: brass (hot), silver (neutral), green/bare (ground). Confirm existing wire colors match.",
-      "Move wires to the same function terminals on the new outlet (hot/neutral/ground). Use screw terminals when available.",
-      "Ensure ground wire is solidly attached; if there are multiple ground wires, connect them as originally configured (don’t leave any unconnected).",
-      "Tuck wires back without pinching; align the outlet and tighten mounting screws.",
-      "Reinstall the cover plate.",
-      "Turn power back ON and test with a receptacle tester; verify correct wiring (hot/neutral/ground)."
-    ],
-    "safety_info": "Shut OFF power at the correct breaker and verify it’s dead before touching any wiring. Never rely on a wall switch to cut power to the outlet. If you see scorch marks, melted insulation, aluminum wiring, damaged conductors, or you find multiple cables with unclear connections, stop and call a licensed electrician. If the outlet is in a bathroom, kitchen, or outdoors, it should be GFCI-protected—confirm correct upstream protection before testing. Use only properly rated replacement parts (tamper-resistant if required by code). If you are not comfortable identifying hot/neutral/ground, do not proceed.",
-    "tips": "Prefer screw-terminal connections over back-stabbing for reliability. Take clear photos before removing wires so you can match connections exactly. If the outlet box is loose, tighten the box or add support (but do not over-adjust wiring). If the breaker trips after replacing, turn power back OFF and troubleshoot—do not keep resetting. After installation, test with a receptacle tester and, if available, confirm voltage with a multimeter.",
-    "trace_id": "ecc47809-4e06-464d-afde-8fd9bed59617"
-  },
-  {
-    "question": "How do I patch a small hole in drywall (about 1–2 inches) and make it blend with the surrounding wall?",
-    "answer": "1) Cut away loose/damaged drywall edges so you have clean, square sides. 2) If the hole is small (≤1–2 in) and you have solid backing behind it, you can use a drywall patch/mesh and joint compound. For larger holes, use a backing block or a self-adhesive patch with a backing. 3) Apply a thin coat of setting-type or all-purpose joint compound over the hole, press mesh tape/fiberglass patch firmly, then add a second thin layer to feather the edges. 4) Let it dry fully, then sand with 120–220 grit until smooth. 5) Apply a final thin skim coat, feather again, let dry, and sand lightly. 6) Prime (especially if you used spackle/patch compound) and paint to match the wall finish.",
-    "equipment_problem": "Drywall repair: small hole patching and blending",
-    "tools_required": [
-      "utility knife",
-      "drywall saw or jab saw (optional)",
-      "putty knife (4 in and 6 in)",
-      "mesh drywall patch or self-adhesive patch",
-      "sanding block or pole sander",
-      "120-grit sandpaper",
-      "220-grit sandpaper",
-      "dust mask",
-      "tack cloth or vacuum with HEPA",
-      "paint roller/brush",
-      "primer"
-    ],
-    "steps": [
-      "Score and remove any loose drywall paper/crumbly edges around the hole until you reach solid drywall.",
-      "If needed, lightly widen the damaged area so it’s clean and not jagged; wipe dust away.",
-      "If using a mesh patch: center it over the hole and press firmly so it adheres to the drywall; ensure it’s snug and flat.",
-      "Spread a thin layer of joint compound over the patch using a 4 in putty knife; feather out past the hole edges by several inches.",
-      "Let dry fully (drying time varies by product and humidity).",
-      "Sand the first coat smooth (start around 120 grit, then refine with 220). Vacuum/tack dust.",
-      "Apply a second thin skim coat with a wider putty knife (6 in) to feather the transition; let dry fully.",
-      "Sand lightly again until the surface is smooth and level with the surrounding wall.",
-      "Prime the repaired area to seal and prevent flashing, then paint to match the existing wall texture/finish."
-    ],
-    "safety_info": "Wear a dust mask (and eye protection) when sanding. Use a vacuum/HEPA setup if possible to reduce airborne drywall dust. Turn off power to the area if there’s any chance of electrical wiring behind the drywall. Cut carefully to avoid slipping and damaging surrounding surfaces.",
-    "tips": "Use thin coats rather than one thick layer—thin layers dry faster and sand cleaner. Feather each coat wider than the last for a seamless blend. For faster repairs, consider a setting-type joint compound/smudging compound (follow the cure time on the label). If the wall has texture (orange peel, knockdown), lightly mimic the texture with a small roller/brush or texture spray after priming, then paint.",
-    "trace_id": "1dbdf4a1-1748-42b5-a97d-313a9cc284c8"
-  },
-  {
-    "question": "How do I patch a small hole in drywall (about 1–2 inches) and make it blend with the surrounding wall?",
-    "answer": "1) Cut back any loose/damaged drywall edges to sound paper and square the opening. 2) If the hole is larger than ~1 inch, use a small backing (drywall patch or scrap wood) behind the hole and fasten it so the patch edges have something to screw/nail into. 3) For a 1–2 inch hole, apply a drywall patch (mesh tape or pre-cut patch) over the opening; for mesh, press it firmly so it spans the hole with no gaps. 4) Apply joint compound (setting-type or premixed) over the patch with a 4–6 in putty knife, feathering outward 2–3 in. 5) Let dry fully, then sand smooth with 120–220 grit. 6) Apply a second skim coat, wider than the first, and feather the edges. 7) Sand again, wipe dust, then prime (especially if you used a different compound or the wall is patched) and paint to match.",
-    "equipment_problem": "Small drywall hole repair and blending a patch for painting",
-    "tools_required": [
-      "utility knife",
-      "drywall saw or jab saw (optional)",
-      "putty knife (4 in and/or 6 in)",
-      "joint compound (all-purpose premixed or setting-type)",
-      "drywall patch or self-adhesive mesh patch",
-      "sanding sponge (120–220 grit)",
-      "primer",
-      "paint (matching color)",
-      "tape measure (optional)",
-      "pencil"
-    ],
-    "steps": [
-      "Turn off power if the hole is near outlets/switches; cut power at the breaker if needed.",
-      "Inspect the hole; remove any loose drywall paper and square the edges using a utility knife.",
-      "If the hole is larger than about 1 inch or the edges are unsupported, install a small backing (drywall patch backing or a scrap wood block) behind the hole and secure it.",
-      "Apply a mesh drywall patch so it fully covers the hole and adheres smoothly with no wrinkles.",
-      "Spread a first coat of joint compound over the patch, feathering the edges outward.",
-      "Let the compound dry completely (follow the label; setting-type dries faster).",
-      "Sand smooth with 120–220 grit until the surface is flush; wipe dust with a dry cloth or tack cloth.",
-      "Apply a second skim coat wider than the first to blend transitions.",
-      "Sand lightly again, wipe dust, then prime.",
-      "Paint with the same sheen as the existing wall (matte/eggshell typically)."
-    ],
-    "safety_info": "Wear eye protection and a dust mask/respirator when sanding. Cut power if working near electrical fixtures. Avoid breathing drywall dust; clean with a HEPA vacuum if available. Use caution around sharp utility knives and sharp drywall edges.",
-    "tips": "Feathering is what makes it disappear—make each coat wider and thinner. Use setting-type joint compound for faster turnaround on small patches. If you patch over textured walls, match the texture method (lightly stipple with a brush or use a spray texture) after the final coat before painting. Let each layer dry fully; sanding too soon causes pinholes and rough spots.",
-    "trace_id": "43ce35fd-1a65-4b3c-8aac-a132a650993c"
-  },
-  {
-    "question": "My dishwasher isn’t draining—there’s standing water at the bottom and the cycle ends with an error. How can I troubleshoot and fix the likely cause?",
-    "answer": "First confirm it’s a drain issue (standing water after the cycle). Then inspect and clean the filter, check the drain hose for kinks/clogs, test the drain pump for blockages, and verify the disposer/air gap path if present. If the pump runs but water doesn’t move, check for a failed pump or a clog in the pump housing. If the pump doesn’t run, inspect for a failed control/float switch or wiring, but start with the most common mechanical causes (filter/pump clog/hose blockage).",
-    "equipment_problem": "Dishwasher (e.g., Bosch/Kenmore/GE style) not draining properly; standing water remains in the tub after the wash cycle, possibly with a drain error code.",
-    "tools_required": [
-      "flathead screwdriver",
-      "torx screwdriver set",
-      "multimeter (optional)",
+      "correct replacement HVAC air filter (proper dimensions)",
       "flashlight",
-      "bucket or shallow pan",
-      "towels",
-      "needle-nose pliers",
-      "gloves"
+      "vacuum with crevice attachment",
+      "work gloves",
+      "thermostat access screwdriver (if needed for cover)"
     ],
     "steps": [
-      "Unplug the dishwasher or switch off the breaker to ensure power is disconnected.",
-      "Remove standing water from the bottom using a cup/sponge, then place towels to catch residual water.",
-      "Remove the lower rack and pull out the bottom filter assembly. Rinse the filter and clean debris (food particles, labels, glass shards) from the filter and sump area.",
-      "Check the drain opening at the bottom of the tub (under the filter). Use a flashlight to look for obstructions and remove any debris carefully.",
-      "Inspect the float/sump area: ensure the float moves freely (if equipped). A stuck float can prevent proper draining.",
-      "Locate the drain hose connection (typically under the sink or behind the unit). Check for kinks and verify the hose isn’t crushed.",
-      "If accessible, disconnect the drain hose at the dishwasher end and check for clogs. Use towels and a bucket because water may spill out.",
-      "If your model has an air gap or disposal connection, inspect the air gap for blockages and verify the disposer knockout plug wasn’t left in place (if connected to a garbage disposal).",
-      "Check the drain pump/pump housing for blockage: remove any cover panels to access the pump, then inspect and clear debris from the pump intake and impeller area.",
-      "Test drain operation: restore power, run a short drain cycle. If water still won’t drain, listen for pump operation and check if the pump hums/starts.",
-      "If the pump runs but water doesn’t move, the pump may be failing or the outlet is restricted—inspect the pump discharge path and consider pump replacement.",
-      "If the pump does not run, inspect wiring and the control/float switch circuit. Use a multimeter only if you’re comfortable checking continuity/power to the pump; otherwise, stop and contact a technician."
+      "Set the thermostat to OFF and turn off power to the furnace/air handler at the switch or breaker.",
+      "Locate the filter slot (often in the return air duct or blower compartment). Pull the filter out and note the direction arrow.",
+      "Check the filter size printed on the frame (e.g., 16x25x1) and buy the same dimensions; consider a higher-efficiency filter only if your system supports it.",
+      "Install the new filter with the airflow arrow pointing in the same direction as the old filter (toward the furnace/air handler).",
+      "Ensure the filter is seated fully with no gaps; close the access door and confirm it latches properly.",
+      "Vacuum the return vent grille and nearby duct openings to remove dust buildup that can restrict airflow.",
+      "Verify thermostat is set to HEAT and fan mode is AUTO; confirm vents are open and not blocked.",
+      "Restore power, run a heating cycle, and observe airflow from supply vents; confirm warm air delivery improves."
     ],
-    "safety_info": "Disconnect power at the breaker or plug before reaching near wiring, the drain pump, or the float switch. Dishwasher water may contain detergent and sharp debris. Wear gloves and eye protection. Avoid using metal tools that could puncture the tub or wiring harness. If you find signs of electrical damage or burning smell, stop and call a professional.",
-    "tips": "Take photos during disassembly to ensure correct reassembly of the filter and any pump cover. Clean the sump thoroughly—most “no drain” issues are caused by trapped debris in the filter/pump intake. After clearing clogs, ensure the filter is fully seated; an improperly installed filter can restrict drainage. If connected to a garbage disposal, confirm the disposal knockout is removed and that the disposal isn’t jammed. For models with an air gap, cleaning the air gap is often overlooked and can resolve persistent draining failures.",
-    "trace_id": "a46d62b8-a997-452a-a50a-5f25b70b3807"
+    "safety_info": "Turn off electrical power before opening the furnace/air handler. Wear gloves to avoid dust exposure. Do not run the system with missing or incorrectly sized filters. If you smell burning, see smoke, or hear abnormal noises, shut it off and stop—contact a professional. If you have a heat pump or gas furnace with complex wiring, avoid changing wiring or components beyond filter/vent inspection.",
+    "tips": "Replace filters on a schedule: typically every 1–3 months during heavy use (winter/summer) and every 3–6 months otherwise, or sooner if you have pets or allergies. If you use a thicker or higher-MERV filter, confirm your system can handle the added resistance. Keep return vents unobstructed for balanced airflow. For recurring weak airflow, consider having ductwork inspected for leaks or obstructions and having the blower/coil cleaned by a technician.",
+    "trace_id": "c341d0cd-ff1f-4eff-88b4-5afc9fc27dd3"
   },
   {
-    "question": "How do I patch a small hole in drywall (about 1–2 inches) and blend it so the wall is ready to paint?",
-    "answer": "1) Cut away loose/damaged drywall edges to a clean square/round opening. 2) If the hole is larger than ~1 inch, install a backing (e.g., a small drywall patch/backer or scrap wood) behind the opening so the patch has something to screw or glue to. 3) Apply a thin layer of joint compound (setting-type or lightweight all-purpose) to the edges and fill the cavity; embed mesh tape if using a patch with tape. 4) Let it dry per label, then sand smooth with 120–220 grit. 5) Apply 2–3 additional thin skim coats, feathering each layer wider than the last. 6) After final dry time, sand again, wipe dust, prime if needed (especially over sanded or repaired areas), then paint using matching sheen.",
-    "equipment_problem": "Drywall repair for a small hole (1–2 inches) in an interior wall",
-    "tools_required": [
-      "utility knife",
-      "drywall saw or oscillating tool (optional)",
-      "tape measure/straightedge (optional)",
-      "putty knife (2–4 inch)",
-      "taping knife (6–10 inch)",
-      "sandpaper (120 and 220 grit) or sanding sponge",
-      "drywall mesh patch or backing material",
-      "caulk gun (optional)",
-      "paintbrush/roller (optional)",
-      "dust mask",
-      "safety glasses"
-    ],
-    "steps": [
-      "Turn off power to nearby outlets/switches if the hole is near wiring; remove cover plates if needed.",
-      "Use a utility knife to cut away any loose paper and create clean, solid edges around the hole.",
-      "For holes over ~1 inch, install backing behind the hole (mesh patch with backing, self-adhesive mesh patch, or small scrap wood fixed behind).",
-      "If using a mesh patch: press the patch over the hole so it sits flat and centered; if using a rigid patch, dry-fit it first.",
-      "Apply a thin first coat of joint compound with a 2–4 inch putty knife, pushing compound into the opening and slightly over the edges.",
-      "Let it dry completely (typically 2–6 hours for thin coats; follow the product label).",
-      "Sand lightly with 120 grit until smooth; remove dust with a dry cloth.",
-      "Apply 2–3 thin skim coats using a wider taping knife, feathering each coat outward; allow each coat to dry fully.",
-      "Final sand with 220 grit, wipe dust, then prime the repaired area if the compound is sanded or if the wall is prone to flashing.",
-      "Paint to match the surrounding wall; use the same sheen (flat/matte/eggshell) and feather paint edges."
-    ],
-    "safety_info": "Wear safety glasses and a dust mask when cutting/sanding drywall. Turn off power if you’re near electrical boxes. Avoid breathing drywall dust; vacuum with a HEPA shop vac if available. Let joint compound fully dry before sanding or painting to prevent soft spots and cracking.",
-    "tips": "Use thin layers—multiple thin coats blend better than one thick coat. Feather the edges by reducing pressure as you reach the perimeter. If you’re repairing near a corner or textured surface, match the texture after priming (e.g., light knockdown or orange-peel) rather than trying to sand it perfectly smooth. For faster repairs, use a setting-type (hardening) compound, but mix only what you can apply within its working time.",
-    "trace_id": "dbf57fc5-1615-4f07-ac88-8dce9a042ab9"
-  },
-  {
-    "question": "How can I replace a worn wall outlet that has a loose fit and intermittent power to a lamp?",
-    "answer": "You can safely replace a standard receptacle if you can access the wiring and you confirm power is OFF at the breaker. Turn off the correct circuit, verify with a non-contact voltage tester that the wires are not live, remove the old receptacle, match the wiring to the same terminals on the new one (including the ground), and secure everything tightly. Restore power and test with a plug-in outlet tester to confirm correct wiring and grounding.",
-    "equipment_problem": "Worn/damaged electrical outlet (receptacle) with loose connection causing intermittent power; possibly worn terminals or improper contact.",
+    "question": "My wall outlet stopped working. How can I safely replace it and check whether the problem is with the outlet or the wiring?",
+    "answer": "You can replace a likely bad outlet safely if you confirm power is off, verify wiring, and match the existing wiring type. Start by turning off the breaker, test the outlet with a non-contact voltage tester, remove the old receptacle, inspect for loose/damaged wires, then install a new receptacle with the same wiring (hot/neutral/ground). If you find burned wiring, a missing ground, or you’re unsure about wire connections, stop and call a licensed electrician.",
+    "equipment_problem": "Non-working standard 120V wall outlet (possibly failed receptacle) that needs replacement and wiring verification.",
     "tools_required": [
       "non-contact voltage tester",
       "flathead and Phillips screwdriver",
+      "wire stripper (optional, only if trimming damaged wire)",
       "needle-nose pliers",
-      "wire stripper (if minor re-strip is needed)",
-      "insulated wire nuts",
-      "outlet tester (plug-in)",
+      "voltage tester with probes (recommended)",
+      "work light",
+      "new matching outlet (15A/125V or 20A/125V as appropriate)"
+    ],
+    "steps": [
+      "Turn off the correct circuit breaker for the outlet and keep the area dry and well-lit.",
+      "Verify power is off: use a non-contact voltage tester on the outlet and (if available) confirm with a plug-in tester or a two-probe voltage tester.",
+      "Remove the outlet cover plate screws and set the cover aside.",
+      "Unscrew the outlet from the electrical box and gently pull it out without stressing the wires.",
+      "Take a clear photo of the current wiring (hot/neutral/ground positions) for reference.",
+      "Inspect wiring for damage: look for loose screws, melted insulation, corrosion, or signs of overheating.",
+      "Loosen the wire connections on the old outlet (note if wires are push-in vs screw terminals) and transfer them to the new outlet using the same configuration.",
+      "Connect wires correctly: typically brass screws = hot, silver screws = neutral, and green/bare or ground screw = ground. If your old outlet had markings, match them.",
+      "If the outlet is grounded, ensure the ground wire is attached to the ground terminal; if there is no ground wire, do not guess—stop and call a professional.",
+      "Tuck wires back carefully and screw the new outlet into the box without pinching wires.",
+      "Install the cover plate.",
+      "Restore power at the breaker and test the outlet using a plug-in tester or a known working device."
+    ],
+    "safety_info": "Always turn off the correct breaker before touching any wiring. Verify the outlet is truly de-energized with a non-contact tester and, ideally, a plug-in or probe voltage tester—test before and after to confirm the tester works. Do not work on circuits that show signs of arcing, burning, melted insulation, or damaged wiring; call a licensed electrician. If you find aluminum wiring, multiple wire types/odd configurations, missing ground, loose backstab connections, or you’re unsure which wire is hot/neutral, stop and hire a professional. Never rely on wall switches or unplugging devices as proof power is off.",
+    "tips": "Match the new receptacle’s rating and type (15A vs 20A; standard vs GFCI/USB if applicable). Use screw terminals rather than backstabs when possible for better long-term reliability. Tighten connections firmly (don’t strip screws). If outlets are daisy-chained, replacing one may restore power only if the problem was the receptacle—if it still won’t work after replacement, the issue may be upstream (breaker, splice, or another outlet) and you should call an electrician. Keep wire lengths neat and avoid overcrowding the box to prevent pinched conductors.",
+    "trace_id": "fb3a6a9f-e08a-47b9-9cf8-925d0946f377"
+  },
+  {
+    "question": "My furnace runs but won’t blow hot air—what should I check first, and how do I troubleshoot the thermostat and air filter safely?",
+    "answer": "Start with the easiest airflow and thermostat checks: verify the thermostat mode and fan setting, confirm the filter isn’t clogged, and check for an airflow restriction that can prevent heat from being delivered. Replace the filter if needed, then inspect the return/vent registers for blockage and ensure the thermostat calls for heat (set to Heat and raise the setpoint). If airflow is normal and the thermostat is correctly calling for heat but the furnace still doesn’t produce hot air, check for a tripped furnace limit switch or a blown fuse—if you see repeated trips or burning smells, stop and call a technician.",
+    "equipment_problem": "Furnace not blowing hot air due to clogged air filter and/or thermostat misconfiguration (mode/fan settings).",
+    "tools_required": [
+      "new HVAC air filter (correct size)",
       "flashlight",
-      "replacement receptacle (same type, e.g., 15A/125V or GFCI if required)"
+      "clean microfiber cloth or vacuum with brush attachment",
+      "basic hand screwdriver (if needed to access filter door)",
+      "multimeter (optional for thermostat power checks)"
     ],
     "steps": [
-      "Turn off power at the breaker for the outlet circuit; label it if needed.",
-      "Verify the outlet is de-energized by testing with a non-contact voltage tester on the hot/neutral slots and any nearby metal parts.",
-      "Remove the outlet cover plate and unscrew the receptacle from the electrical box.",
-      "Pull the receptacle out carefully without stressing wires.",
-      "Note the wiring arrangement (hot/neutral/ground) and which wires connect to which screws (or backstab holes). Take a photo for reference.",
-      "If there are backstabbed wires, consider moving them to the screw terminals on the new receptacle for a more secure connection.",
-      "Check wire insulation for damage; if insulation is nicked, cut back to clean copper and re-strip to the correct length if you can do so safely.",
-      "Connect wires to the new receptacle: hot (usually brass), neutral (usually silver), and ground (green or bare copper to green ground screw). Match the original configuration.",
-      "Tighten all terminal screws firmly; do not leave loose strands.",
-      "Carefully tuck wires back into the box and position the receptacle so it sits flush; ensure no wires are pinched.",
-      "Reinstall the receptacle screws and attach the cover plate.",
-      "Restore power at the breaker.",
-      "Test with a plug-in outlet tester to confirm correct hot/neutral and ground; then test the lamp."
+      "Set the thermostat to OFF, then to HEAT, and raise the setpoint 3–5°F above the current room temperature.",
+      "Check the thermostat fan setting: set it to AUTO (not ON) so the furnace can control blower operation.",
+      "Locate the furnace air filter (usually in the return duct or blower compartment). Turn off power to the furnace at the switch or breaker if you need to open the filter door.",
+      "Remove the old filter and inspect it: if it’s gray, clogged, or airflow is restricted, replace it with the exact same size and MERV rating recommended for your system.",
+      "Reinstall the filter with the airflow arrow pointing in the correct direction (toward the furnace). Close the filter door securely.",
+      "Inspect return air grilles and supply registers: remove dust, furniture, or rugs blocking airflow; ensure vents aren’t closed or obstructed.",
+      "Turn power back on and let the system run a full call for heat (watch for the blower starting and warm air at registers).",
+      "If the furnace still runs but air stays cool, check for a tripped furnace limit switch or safety switch (often inside the furnace access panel). If you find repeated trips, stop and call a professional."
     ],
-    "safety_info": "Shut off the breaker before touching any wires and verify with a non-contact voltage tester. Do not rely on the wall switch being off—only the breaker guarantees power is removed. If you cannot identify the correct breaker, the outlet is in a multi-wire circuit, you find aluminum wiring, signs of burning/melting, damaged insulation, or you must splice more than simple like-for-like connections, stop and call a licensed electrician. If the receptacle is a GFCI with downstream protection or you suspect improper wiring, professional help is recommended to avoid shock/fire risks.",
-    "tips": "Replace with the same receptacle type and rating (e.g., 15A/125V; use GFCI/AFCI only if it’s required for that location). Prefer screw-terminal connections over backstabs for reliability. Use photos and labeling to avoid mixing hot/neutral. If the outlet box is loose or damaged, secure it properly before re-tightening the receptacle. A plug-in outlet tester can quickly confirm correct wiring after replacement.",
-    "trace_id": "21b02541-7ec2-485b-b032-b2a06331c4ad"
-  },
-  {
-    "question": "My top-load washing machine fills with water but won’t spin or drain—what should I check first and how can I fix it?",
-    "answer": "First confirm whether the machine is actually draining and whether the spin cycle is being blocked by a lid switch or a control issue. Then inspect the drain path (pump filter/impeller and hose) for clogs, test the lid switch and lid-lock mechanism (for safety interlocks), and verify the drive/pump components get power during drain/spin. Most no-drain/no-spin cases are caused by a clogged pump/impeller or a failing lid switch that prevents the spin step.",
-    "equipment_problem": "Top-load washing machine: fills normally but does not spin and does not drain; water remains in the tub after a cycle.",
-    "tools_required": [
-      "multimeter",
-      "screwdriver set",
-      "flashlight",
-      "bucket",
-      "towels",
-      "pliers",
-      "brush or small pick"
-    ],
-    "steps": [
-      "Unplug the washer (or switch off the breaker) and turn off the water supply valves.",
-      "Drain any remaining water safely using a drain hose into a bucket, or by removing the washer’s drain/pump access cap if your model has a pump filter.",
-      "Check for obvious blockages: inspect the drain hose for kinks, clogs, or improper height/installation; remove the hose if needed and flush it.",
-      "Access the pump area (pump filter/impeller housing depending on model). Remove lint, coins, socks, or debris from the pump filter and impeller; ensure the impeller spins freely by hand.",
-      "Inspect the drain hose connection and standpipe area for obstructions; verify the hose isn’t pushed too far into the standpipe.",
-      "Check the lid switch/lid lock: with the washer unplugged, locate the lid switch connector. Use a multimeter to test continuity/actuation when the lid is closed vs. open (or follow your model’s switch spec). Replace the switch if it doesn’t change state correctly.",
-      "If the lid switch tests good, check for power/command during drain/spin: with proper precautions, confirm the pump receives power when the cycle reaches drain/spin. If the pump doesn’t get power, the issue may be control/board; if it does and the pump won’t run, replace the pump.",
-      "Reassemble, run a short test cycle (drain/spin only if available), and verify the tub drains and spins normally."
-    ],
-    "safety_info": "Unplug the washer before removing panels or accessing the pump/lid switch. Water and electrical components can be present—dry all connections before reconnecting. Do not bypass safety interlocks (lid switch). Use caution when handling sharp metal edges and when removing pump covers (residual water may spill). If you smell burning or see melted wiring, stop and consider professional service.",
-    "tips": "Take photos of wiring and connector locations before disconnecting. Clean the pump filter regularly to prevent repeat clogs. Verify the drain hose height per the manual (too low can cause backflow; too high can restrict drainage). If the washer makes a humming sound during drain but doesn’t move water, it often indicates a seized/clogged pump—clean the impeller first. If multiple cycles fail in the same way after cleaning, test the lid switch and pump again before replacing parts.",
-    "trace_id": "414130fb-7626-4394-8f27-7ec5b95815b5"
-  },
-  {
-    "question": "My bathroom sink faucet is leaking from the base and the handle feels loose—how can I repair it and stop the leak?",
-    "answer": "1) Shut off the water supply to the sink (hot and cold) and open the faucet to relieve pressure. 2) Cover the drain to prevent losing small parts. 3) Remove the handle(s): pry off the decorative cap, remove the screw, and lift off the handle. 4) Remove the packing nut/retainer or cartridge retaining clip. 5) Inspect the cartridge/valve stem and O-rings for wear, cracks, or flattening. 6) If the leak is from the base, replace worn O-rings/cartridge or the cartridge assembly (most reliable). 7) Clean mineral deposits from the valve body and seat surfaces using a soft brush and vinegar if needed. 8) Reinstall the cartridge/O-rings with light plumber’s grease on O-rings (not on rubber seats unless recommended). 9) Reassemble, turn water back on slowly, and check for leaks under the sink and around the faucet base. 10) If it still leaks, confirm the correct cartridge model and re-check O-ring seating and tightening without overtightening.",
-    "equipment_problem": "Leak from bathroom sink faucet base near the handle/valve body (likely worn cartridge/O-rings) on a two-handle or single-handle faucet",
-    "tools_required": [
-      "adjustable wrench",
-      "screwdriver (flat and/or Phillips)",
-      "needle-nose pliers",
-      "hex/allen keys (if applicable)",
-      "plumber’s grease (silicone-based)",
-      "soft brush",
-      "white vinegar (for mineral buildup)",
-      "new faucet cartridge and/or replacement O-ring kit"
-    ],
-    "steps": [
-      "Shut off hot and cold water supply valves under the sink; open the faucet to drain residual water.",
-      "Place a towel in the cabinet and cover the drain to catch dropped parts.",
-      "Remove the handle: pry off the cap, remove the handle screw, and lift the handle off.",
-      "Remove the retaining nut/clip and pull out the cartridge (or valve stem) per the faucet design.",
-      "Inspect the cartridge, rubber seats, and any O-rings for cracks, flattening, or debris; replace worn parts.",
-      "Clean the valve body and cartridge contact surfaces; remove mineral scale with vinegar and a soft brush.",
-      "Lightly lubricate new O-rings with silicone plumber’s grease and seat them properly; reinstall the cartridge.",
-      "Reassemble the retainer/nut and handle; tighten snugly (avoid overtightening).",
-      "Turn water back on slowly and test for leaks around the base and under the sink."
-    ],
-    "safety_info": "Shut off water before disassembly to prevent flooding. Use a towel and work carefully to avoid dropping small parts into the sink drain. If you encounter stuck fittings or corroded fasteners, stop and use appropriate penetrating oil or consider professional help—forcing can damage valve seats. Wear eye protection when removing clips or scraping scale.",
-    "tips": "Take photos during disassembly to ensure correct reassembly. Match the cartridge/O-ring kit exactly to the faucet brand and model. If the leak stops after replacing the cartridge, you likely had internal seal wear; if it persists, check for a damaged valve seat or mis-seated O-ring. Avoid using petroleum grease on rubber components unless the manufacturer specifies it—silicone plumber’s grease is commonly preferred for O-rings.",
-    "trace_id": "558ef088-1bb9-4156-883e-1d78a29d446b"
-  },
-  {
-    "question": "My home’s AC runs but the airflow feels weak and the system struggles to cool. Could a dirty air filter or clogged return vent be causing this, and how can I safely check and fix it?",
-    "answer": "Yes—weak airflow is commonly caused by a dirty filter or blocked return/return vent. Replace the filter first, then inspect and clean accessible vents and the return pathway. After changes, verify airflow at the supply registers and confirm the thermostat settings are correct. If airflow is still weak after the filter/vent cleaning, the issue may be with the blower, ductwork, or evaporator coil, which typically requires professional service.",
-    "equipment_problem": "Clogged/dirty HVAC air filter and partially blocked return vent restricting airflow",
-    "tools_required": [
-      "correct replacement HVAC air filter (right size/MERV rating)",
-      "flashlight",
-      "vacuum with hose attachment",
-      "screwdriver (if needed to remove vent cover)",
-      "gloves",
-      "clean microfiber cloth or brush"
-    ],
-    "steps": [
-      "Set the thermostat to OFF (or switch HVAC system to OFF) and turn off power at the HVAC/air handler switch if accessible.",
-      "Locate the air filter (often in the return air grille or air handler). Note the filter size and airflow direction arrow.",
-      "Remove the old filter and inspect it: if it’s gray/dusty, swollen, or restricting airflow, replace it.",
-      "Install a new filter of the exact size; ensure the arrow points in the direction of airflow (toward the blower/air handler).",
-      "Check the return vent/grille for obstructions (furniture, rugs, stored items) and remove dust buildup from the grille using a vacuum and cloth.",
-      "If the vent cover is removable, carefully remove it, vacuum the accessible duct opening, and wipe surfaces. Do not push debris deeper into the duct.",
-      "Inspect nearby supply registers for blocked airflow (closed dampers, furniture, excessive dust) and open them fully.",
-      "Restore power and set the thermostat to COOL with the correct temperature. Wait a few minutes and verify airflow feels stronger at multiple vents.",
-      "If cooling is still weak after filter/vent cleaning, schedule a technician to check blower performance, duct leakage/obstructions, and evaporator coil condition."
-    ],
-    "safety_info": "Turn off power before removing filters or vent covers to avoid moving parts exposure. Wear gloves and avoid breathing dust (use a mask if the area is dusty). Do not poke tools deep into ductwork or open refrigerant lines. If you smell burning, see ice on the evaporator coil, or hear loud grinding, stop and call a professional.",
-    "tips": "Check filters monthly during peak heating/cooling seasons; replace every 1–3 months depending on household dust/pets. Use the filter size printed on the frame and follow manufacturer guidance—higher MERV can restrict airflow if the system isn’t designed for it. Keep return vents unobstructed and consider sealing gaps around duct connections if airflow remains inconsistent. For best comfort, set the thermostat fan to AUTO (not ON) unless you need continuous circulation.",
-    "trace_id": "ba9645ab-576a-485d-bf30-8c043130933f"
-  },
-  {
-    "question": "How can I safely replace a worn 3-prong outlet that has a loose feel when I plug in a device?",
-    "answer": "You can replace the outlet safely if the wiring is in good condition and the circuit is standard 120V. Turn off power at the breaker, confirm the outlet is truly de-energized with a non-contact tester and a plug-in tester, then remove the old outlet, connect the wires to the new one using the same screw terminals, and reassemble. If you find damaged insulation, aluminum wiring, burn marks, or wiring that doesn’t match the outlet labeling, stop and call an electrician.",
-    "equipment_problem": "Loose/worn 3-prong receptacle (hot/neutral/ground connection feeling unreliable), possibly from worn contacts at the outlet.",
-    "tools_required": [
-      "non-contact voltage tester",
-      "plug-in outlet tester",
-      "flathead screwdriver or Phillips screwdriver (match outlet screws)",
-      "needle-nose pliers (optional)",
-      "wire stripper (only if minor re-strip is needed)",
-      "flashlight",
-      "utility knife or small wire cutter (optional)"
-    ],
-    "steps": [
-      "Identify the correct breaker for the outlet and switch it OFF.",
-      "Test the outlet with a non-contact voltage tester at the slots and around the faceplate to confirm no voltage is present.",
-      "For extra assurance, plug an outlet tester into the receptacle to verify power is off (it should indicate no power).",
-      "Remove the faceplate screws and gently pull the outlet from the box without straining wires.",
-      "Take a clear photo of the existing wiring (which wire goes to which terminal) before disconnecting anything.",
-      "Loosen the terminal screws and disconnect the hot (usually brass), neutral (usually silver), and ground (green or bare/green wire). If using backstab holes, note that the new outlet should typically use the screw terminals instead.",
-      "Check wire insulation for damage or scorching. If insulation is nicked, brittle, or there are burn marks, stop and call a professional.",
-      "If the wire ends are frayed, trim back to clean copper and re-strip only the needed amount per the outlet instructions (usually about 1/2 in / 12–13 mm).",
-      "Connect wires to the new outlet: hot to brass screw, neutral to silver screw, and ground to green screw (or the ground terminal). Tighten screws firmly so wires do not move.",
-      "Tuck wires neatly back into the box, ensuring no wire is pinched between the outlet and the box.",
-      "Secure the outlet to the box, install the faceplate, and ensure the ground tab (and any internal grounding) is correct for the outlet type.",
-      "Turn the breaker ON, then test the outlet using the plug-in outlet tester (confirm correct polarity and no open ground).",
-      "If the tester indicates reversed polarity, open ground, or other faults, turn power OFF again and investigate or call an electrician."
-    ],
-    "safety_info": "Always work with power OFF at the breaker. Never rely on a wall switch to de-energize an outlet—use the breaker. Confirm the outlet is truly dead with both a non-contact tester and a plug-in outlet tester. If you see burn damage, melting, loose wire strands, aluminum wiring, multiple wires on terminals that don’t fit safely, or wiring that appears altered/unknown, stop and call a licensed electrician. If the outlet box is plastic and any wire is damaged or the grounding path is unclear, professional help is recommended.",
-    "tips": "Replace with a matching specification outlet (same rating and type: 15A/20A, GFCI/standard as needed). Use screw terminals rather than backstab connections for more reliable contact. Tighten terminal screws firmly and avoid over-bending copper leads. Label the breaker before starting so others don’t accidentally turn it back on. After installation, re-check with the outlet tester and test any downstream devices if applicable. If you’re replacing a GFCI outlet or working on a circuit with multiple outlets, confirm whether other outlets are protected downstream before changing anything.",
-    "trace_id": "e8d2990d-e704-486a-922c-c98d03a96f46"
-  },
-  {
-    "question": "My bathroom sink faucet keeps dripping from the spout even after I tighten the handle. How can I diagnose and fix a likely cartridge/seating leak without replacing the whole faucet?",
-    "answer": "You can usually stop a drip by replacing the faucet cartridge or cleaning/replacing the internal seals. Start by confirming the leak source, then disassemble the handle, inspect the cartridge and O-rings, clean mineral buildup, and replace worn parts. Reassemble carefully, ensuring the cartridge seats correctly and the aerator is clean. Test by running water and checking for leaks around the handle and spout.",
-    "equipment_problem": "Leaking bathroom sink faucet spout (drip continues from the spout) on a single-handle cartridge faucet, likely worn cartridge seals or mineral debris.",
-    "tools_required": [
-      "adjustable wrench",
-      "screwdriver set",
-      "hex key/Allen keys",
-      "channel-lock pliers",
-      "faucet cartridge puller (if needed)",
-      "soft toothbrush or small nylon brush",
-      "white vinegar or descaling solution",
-      "clean rag",
-      "plumber's grease (silicone)"
-    ],
-    "steps": [
-      "Turn off the hot and cold shutoff valves under the sink (or shut off the main water if no shutoffs). Open the faucet to relieve pressure.",
-      "Place a towel or bucket under the sink to catch drips and prevent small parts from falling.",
-      "Remove the aerator from the spout (unscrew by hand or with a strap wrench if needed) and check for debris; rinse it. If the drip persists, the issue is likely inside the faucet.",
-      "Remove the handle: pry off the decorative cap (if present), then loosen the retaining screw with the correct hex key/screwdriver, and lift the handle off.",
-      "Use the correct size wrench to loosen and remove the cartridge retaining nut (if applicable). Pull the cartridge straight up. If it resists, use a cartridge puller or gently wiggle while pulling—avoid twisting hard.",
-      "Inspect the cartridge for wear, cracks, or damaged rubber seals. Check O-rings and any small rubber seats for flattening or tears.",
-      "If seals look intact but mineral buildup is present, soak the cartridge and rubber seals in white vinegar for 15–30 minutes, then gently scrub with a soft toothbrush. Do not damage rubber parts.",
-      "Install replacement seals/cartridge if worn. Lightly apply plumber’s grease (silicone-based) to new O-rings to help them seat and prevent future leaks.",
-      "Reinsert the cartridge, ensuring it aligns with the faucet body guides. Reinstall retaining nut and handle, then tighten securely without over-torquing.",
-      "Turn water back on and test: run water and observe the spout and around the handle. If dripping continues, re-check cartridge seating/alignment and confirm the shutoff valves are fully open and not causing back-pressure issues."
-    ],
-    "safety_info": "Wear eye protection when disassembling. Keep water off by turning off shutoff valves before working. Be cautious with sharp edges inside the faucet. Do not use metal tools to pry or scratch rubber seals. If you find corrosion that prevents proper seating, or if shutoff valves won’t close fully, stop and call a plumber to avoid water damage.",
-    "tips": "Take clear photos during disassembly to ensure correct reassembly order. Match the cartridge model number (often printed on the old cartridge or in the faucet manual) for accurate replacement. If your faucet has a removable cartridge, clean the cartridge and check for debris in the seat area—many persistent drips are caused by mineral buildup. After reassembly, let the water run briefly to flush debris, then re-check for drips.",
-    "trace_id": "121dcbf9-757f-4441-a9f6-7194a413f1f3"
-  },
-  {
-    "question": "How can I safely replace a worn or damaged wall outlet (receptacle) in my home when the outlet is loose and the faceplate looks scorched?",
-    "answer": "1) Turn off power at the correct breaker and verify the outlet is dead. 2) Remove the faceplate and outlet, inspecting for scorch marks or damaged wiring. 3) If wiring is intact, match the new outlet to the existing wiring (hot/neutral/ground) and secure it firmly. 4) Reattach the faceplate, restore power, and test with a receptacle tester. If you find heavy scorching, melted insulation, burn marks, aluminum wiring issues, or you’re unsure which wires are which, stop and call a licensed electrician.",
-    "equipment_problem": "Damaged/loose wall receptacle with signs of heat damage (scorching) requiring replacement",
-    "tools_required": [
-      "receptacle tester (3-prong)",
-      "non-contact voltage tester",
-      "multimeter (optional)",
-      "flathead and Phillips screwdriver",
-      "needle-nose pliers",
-      "wire stripper/cutter (if needed)",
-      "insulated wire connectors (wire nuts)",
-      "flashlight"
-    ],
-    "steps": [
-      "Identify the correct circuit breaker for the outlet. Turn it OFF.",
-      "Verify the outlet is de-energized using a non-contact voltage tester at the slots and (if possible) at the wires inside the box.",
-      "Remove the faceplate screws and pull the receptacle out carefully.",
-      "Inspect wiring and the back of the outlet for scorch marks, melted insulation, loose backstab connections, or corrosion. If any wiring is heat-damaged or brittle, stop and call a professional.",
-      "Disconnect the wires from the old outlet. Note which wire goes to which terminal (typically hot=brass, neutral=silver, ground=green). If labels are unclear, take photos.",
-      "If the receptacle uses backstab connections, move the wires to the side screw terminals on the new outlet (better mechanical connection).",
-      "Strip wire ends only as needed to expose clean copper. Reconnect hot, neutral, and ground to the matching terminals; tighten screws firmly.",
-      "Ensure no bare copper is exposed except at the terminal connection and that wires are neatly folded back into the box without pinching.",
-      "Push the receptacle back into the box and secure it. Reinstall the faceplate.",
-      "Restore power at the breaker and test the outlet with a receptacle tester; confirm correct wiring indication (and ground if applicable).",
-      "If the tester shows reversed hot/neutral, no ground, or open neutral, turn power OFF and investigate wiring or call an electrician."
-    ],
-    "safety_info": "Shut OFF the breaker—not just a switch—and verify with a tester before touching any wiring. Treat any scorch marks as a possible sign of overheating or arcing; do not proceed if insulation is melted, wires are discolored/brittle, or the box shows evidence of fire damage. Do not work on circuits you can’t confidently identify or if you’re unsure about wire connections. If you suspect aluminum wiring, damaged conductor insulation, repeated breaker trips, or the tester indicates wiring faults, stop and call a licensed electrician. If the outlet is in a wet area (bathroom, outdoors, kitchen counter per code), ensure it’s GFCI-protected—installation rules may require specific devices and upstream wiring checks.",
-    "tips": "Use a quality, matching receptacle type (e.g., standard vs GFCI). Prefer side screw terminations over backstab connections for reliability. Take clear photos before disconnecting wires. Tighten terminal screws firmly (snug, not stripped). If the box is crowded, use gentle wire dressing so the receptacle sits flush. Consider replacing the faceplate if it’s warped or heat-stained. If multiple outlets on the same circuit are affected, test them all—an underlying loose connection may exist elsewhere.",
-    "trace_id": "1a57a5ad-617d-419d-ab21-480b7227c394"
-  },
-  {
-    "question": "Why is my kitchen sink draining slowly and gurgling, and how can I clear a clog safely from the P-trap and trap arm?",
-    "answer": "Slow drain and gurgling usually indicate a clog in the P-trap, trap arm, or a partially blocked vent. Start by confirming the clog is downstream of the shutoff/strainer area, then remove and clean the P-trap, check the trap arm connection for buildup, and reassemble with new seals if needed. If the sink still drains poorly after clearing the P-trap, the clog may be farther into the drain line or tied to a vent issue—at that point, use a drain auger or consider a plumber.",
-    "equipment_problem": "Slow, gurgling kitchen sink drain due to a clog in the P-trap and/or trap arm under the sink",
-    "tools_required": [
-      "adjustable wrench or channel-lock pliers",
-      "bucket",
-      "rubber gloves",
-      "flashlight",
-      "paper towels/rags",
-      "drain cleaner-safe plunger (optional)",
-      "drain auger (closer to 1/4 in. to 1/2 in. cable) (optional)",
-      "plumber's tape (optional for fittings)",
-      "new slip-joint washers or P-trap seals (as needed)"
-    ],
-    "steps": [
-      "Turn off water supply to the sink if you have a shutoff that’s easy to access (not required for the drain, but helpful if you’ll disconnect lines).",
-      "Place a bucket under the P-trap and put rags around the area to catch drips and debris.",
-      "Use adjustable wrench/channel-lock pliers to loosen the slip nuts on the P-trap. Hold the trap while loosening to prevent it from dropping.",
-      "Remove the P-trap and inspect it for hair/grease/food buildup. Clean it thoroughly with hot water and wipe out residue.",
-      "Check the inlet/outlet of the trap connections (the tailpiece and trap arm). Remove any visible debris and use a flashlight to look for obstructions.",
-      "If the clog isn’t obvious, gently run a small flexible drain snake/auger into the trap arm opening (stop if you feel resistance that suggests you’ve reached a bend). Retrieve and clear debris.",
-      "Reinstall the P-trap with properly seated gaskets/washer seals. Hand-tighten slip nuts first, then snug with the wrench—do not overtighten (overtightening can crack fittings).",
-      "Run water and check for leaks under the sink. Test drainage by running the tap for 30–60 seconds and confirming it drains without gurgling."
-    ],
-    "safety_info": "Wear rubber gloves and protect eyes; drain water and debris can contain bacteria. Avoid using harsh chemical drain cleaners on common slip-joint/P-trap setups—chemicals can damage plumbing and create hazardous fumes. If you smell strong sewer gas, ventilate the area and stop; consider professional help. If you encounter significant resistance with an auger or the pipe begins to flex/creak, stop to avoid damage.",
-    "tips": "To prevent recurrence, use a sink strainer and periodically flush with hot water (not boiling if you have plastic drain lines). If the P-trap is clear but the sink still gurgles, the vent may be partially blocked—don’t keep forcing tools; a plumber can verify venting. Replace old, flattened slip-joint washers for a leak-free seal. Photograph the fitting orientation before disassembly so reassembly is straightforward.",
-    "trace_id": "918913d5-a61c-4c89-b686-756254a3f815"
-  },
-  {
-    "question": "How do I patch a small hole in drywall (about 1–2 inches) and make it blend with the wall?",
-    "answer": "For a 1–2 inch hole, use a mesh patch or backing strip, then build up joint compound in thin layers, sand between coats, and feather the edges for a smooth blend. Materials: joint compound (drying or all-purpose), self-adhesive drywall mesh patch (or backing), 120/220-grit sandpaper, drywall knife (4 in), taping knife (6 in), primer, and matching wall paint. Step-by-step: clean the hole edges, apply/secure the patch, skim with joint compound, let dry fully, sand smooth, apply 2–3 thinner coats, sand feathered, prime, then paint.",
-    "equipment_problem": "Drywall repair: small hole patching and blending",
-    "tools_required": [
-      "utility knife",
-      "drywall knife (4 in)",
-      "taping knife (6 in)",
-      "self-adhesive drywall mesh patch",
-      "sanding block or sanding sponge",
-      "120-grit sandpaper",
-      "220-grit sandpaper",
-      "putty knife",
-      "caulk gun (optional)",
-      "paintbrush or roller",
-      "primer"
-    ],
-    "steps": [
-      "Cut/clean the hole edges so they’re not crumbling; remove loose paper and drywall dust.",
-      "If the area is irregular, lightly trim until the hole is a consistent shape. For a 1–2 inch hole, center a self-adhesive mesh patch over the opening and press firmly so it sticks to solid drywall edges.",
-      "Skim the patch: use a 4 in drywall knife to spread a thin layer of joint compound over the mesh, pressing to remove air pockets.",
-      "Let it dry completely (drying times vary by product and humidity; don’t rush).",
-      "Sand with 120-grit until the surface is flat and the edges are smooth; wipe dust with a dry cloth or tack cloth.",
-      "Apply a second, thinner coat with a wider feather (use the 6 in knife). Let dry.",
-      "Sand again using 220-grit for a finer finish; wipe dust.",
-      "Apply a third skim coat only if needed to eliminate low spots or visible edges; sand smooth.",
-      "Prime the patched area (especially if using a water-based compound) to prevent flashing or uneven sheen.",
-      "Paint to match the surrounding wall texture/finish; feather the paint edges slightly."
-    ],
-    "safety_info": "Wear a dust mask/respirator and eye protection when sanding. Keep the work area ventilated. Turn off power to nearby outlets/switches if sanding near wiring. Use sharp tools carefully to avoid cuts; keep blades retracted when not in use. Dispose of drywall dust and debris properly.",
-    "tips": "Use thin coats—multiple thin layers blend better than one thick layer and reduce cracking. Feather the edges wider each coat (4 in knife → 6 in knife, etc.). If the wall is textured, match the texture after priming (lightly stipple with a sponge/brush or use a small texture patch method). If the hole is near a corner, consider using a backing strip and a smaller mesh patch to avoid weakening the edge. For best paint blending, prime and paint the entire small section rather than only the patch.",
-    "trace_id": "3a9acee7-0b62-4861-b871-420a6d99971c"
-  },
-  {
-    "question": "How can I safely replace a worn two-prong outlet with a new grounded (3-prong) outlet when my existing wiring has only two wires?",
-    "answer": "You should not install a grounded 3-prong outlet if the existing circuit does not have a ground conductor. The safe homeowner approach is to replace like-for-like (2-prong to 2-prong), or have an electrician add grounding if you want a true 3-prong outlet. If you proceed with a 2-prong replacement, verify power is off, confirm wiring type, and use the correct outlet and faceplate. Do not rely on metal boxes or conduit as a ground unless you confirm continuity per code and local requirements.",
-    "equipment_problem": "Outlet replacement where the existing outlet is 2-prong (no equipment ground present) but the homeowner wants to install a 3-prong grounded outlet.",
-    "tools_required": [
-      "non-contact voltage tester",
-      "screwdriver (flat and/or Phillips)",
-      "wire stripper (if needed)",
-      "needle-nose pliers",
-      "voltage tester (optional but recommended)",
-      "new outlet matching wiring type",
-      "wire connectors (if needed)",
-      "flashlight"
-    ],
-    "steps": [
-      "Turn off power to the circuit at the breaker and verify the outlet is de-energized using a non-contact voltage tester (test on and off sources if possible).",
-      "Remove the outlet cover and outlet screws; pull the outlet out carefully without disconnecting wires yet.",
-      "Identify the wires: note how many conductors you have (typically hot and neutral for a 2-prong setup) and whether there is a separate green/bare equipment-ground wire.",
-      "If there is no green/bare ground wire, stop—do not install a 3-prong grounded outlet. Replace it with a 2-prong outlet (or have an electrician add grounding).",
-      "For a like-for-like replacement: connect hot (usually black or brass screw) and neutral (usually white or silver screw) to the matching terminals on the new outlet.",
-      "If there is a ground wire present: connect it to the green grounding screw or green terminal on the outlet, and ensure the metal box is properly grounded (only if you know it’s bonded correctly).",
-      "Tuck wires back neatly, mount the outlet with correct screw torque (snug, not over-tight).",
-      "Install the cover plate, then turn the breaker back on.",
-      "Test: use a plug-in outlet tester to confirm correct wiring (and GFCI where applicable). If anything is wrong, turn off power and recheck connections."
-    ],
-    "safety_info": "Always turn off power at the breaker and verify with a voltage tester. Never assume wiring is grounded just because the box is metal. Do not install a 3-prong grounded outlet without a real equipment grounding conductor; using a 'cheater' ground or relying on piping/box contact can create a shock/fire hazard. If you find damaged wiring, aluminum wiring, loose/overheated connections, burning smell, or you need to add grounding/rewire, call a licensed electrician.",
-    "tips": "Match the outlet type to the wiring: 2-prong outlets belong on ungrounded circuits unless grounding is added. Replace worn outlets with the same rating (e.g., 15A/125V) and consider adding a GFCI outlet only if the wiring method supports it and you understand line/load connections. Label wires before disconnecting if you’re unsure. Use a quality outlet and firm wire terminations; loose connections are a common cause of arcing and heat. After installation, test before using any high-load devices.",
-    "trace_id": "38e4c8d8-72d3-453b-bca0-5699057466dc"
-  },
-  {
-    "question": "Why is my kitchen sink leaking under the cabinet, and how can I fix a leaking P-trap connection?",
-    "answer": "A leak under the sink is commonly caused by misaligned trap fittings, worn slip-joint washers, or a damaged trap/extension tailpiece. First, confirm where the water is coming from, then disassemble only the affected slip joints, inspect parts for cracks or deformation, replace any compromised washers, reinstall with proper alignment, and test for leaks. Tighten slip nuts only snugly—overtightening can crack plastic or distort washers.",
-    "equipment_problem": "Leaking kitchen sink P-trap slip-joint connection under the cabinet (near the tailpiece or trap arm).",
-    "tools_required": [
-      "adjustable wrench",
-      "bucket or small pan",
-      "rags",
-      "flashlight",
-      "replacement slip-joint washers (or P-trap gasket kit)",
-      "plumber's tape (optional, for threaded connections only)"
-    ],
-    "steps": [
-      "Clear the cabinet area and place a bucket/pan under the P-trap. Wipe everything dry so you can see the leak source clearly.",
-      "Run water briefly (or pour a small amount) and use a flashlight to identify whether the leak is at the nut connecting to the sink tailpiece, the nut connecting to the wall/branch, or a crack in the trap.",
-      "If the leak is at a slip-joint nut, loosen the nut with an adjustable wrench while holding the mating piece to prevent twisting the pipe.",
-      "Separate the joint and remove the old washer/gasket. Inspect the washer for flattening, brittleness, tears, or misfit.",
-      "Inspect the trap and tailpiece for cracks, deformation, or scratches where the washer seats. Replace the trap section if any crack is present.",
-      "Reinstall the joint: ensure the washer sits correctly (flat against the mating surface) and the trap is aligned so the washer is not pinched or skewed.",
-      "Thread the slip nut on by hand first to avoid cross-threading, then tighten snugly (typically about 1/4 to 1/2 turn past hand-tight). Do not overtighten plastic.",
-      "Wipe dry, then run water again and check for seepage at the joint. If leaking persists, disassemble and confirm washer orientation and alignment; replace the washer if needed."
-    ],
-    "safety_info": "Turn off water if you need extended work and avoid working with wet electrical outlets. Wear eye protection when loosening fittings (residual water may splash). If you find a cracked pipe or extensive corrosion, stop and replace the damaged section—do not attempt to patch pressure-bearing or cracked fittings.",
-    "tips": "Take photos before disassembly to match orientation. Use a bucket to catch water and reduce mess. Slip-joint connections typically do not require sealant—avoid pipe dope or silicone on standard slip nuts unless the manufacturer specifies it. If the leak is from a threaded connection (less common under a sink), use appropriate thread sealant only on the threads (not on the inside flow path) and ensure correct thread type.",
-    "trace_id": "a079a2a5-f39f-407d-abac-0cde87d03d8f"
-  },
-  {
-    "question": "How do I replace a faulty wall outlet (receptacle) safely if it’s not working, but I’m not sure whether the wiring is loose or if the outlet is bad?",
-    "answer": "You can safely replace a standard receptacle if you confirm power is off and the wiring is in good condition. Start by turning off the correct breaker, verify with a non-contact tester (and ideally a multimeter), remove the old outlet, check that wires are secure and not damaged, then install the same type of outlet (and correct wiring orientation). Restore power and test with a plug-in tester before using the outlet normally. If you find burn marks, damaged insulation, aluminum wiring needing anti-oxidant treatment, or any uncertainty about wiring, stop and call a licensed electrician.",
-    "equipment_problem": "Wall outlet (receptacle) not working or intermittently dead; likely failed receptacle or loose/damaged connections at the outlet box.",
-    "tools_required": [
-      "non-contact voltage tester",
-      "needle-nose pliers",
-      "screwdriver (flat/Phillips as needed)",
-      "wire stripper (small gauge-capable)",
-      "multimeter (optional but recommended)",
-      "plug-in outlet tester",
-      "flashlight"
-    ],
-    "steps": [
-      "Identify the correct breaker for the outlet and switch it OFF; if unsure, turn OFF the main and label the circuit for later.",
-      "Verify power is OFF at the outlet using a non-contact voltage tester; test the tester on a known live outlet first if possible.",
-      "Remove the outlet faceplate screws, then pull the receptacle out carefully (do not pull on wires).",
-      "Inspect wiring for loose connections, damaged insulation, corrosion, or signs of overheating (brown/black marks). If any are present, stop and call a professional.",
-      "Note the wire connections (hot/neutral/ground). Take a quick photo for reference.",
-      "Loosen the screws or terminal clamps holding the wires and disconnect the old receptacle.",
-      "If wire insulation is nicked or the conductor is damaged, cut back to clean copper/undamaged wire and re-strip carefully; do not leave damaged wire in place.",
-      "Connect wires to the new receptacle of the same type and rating (e.g., standard 15A/125V). Typically: hot to brass screws, neutral to silver screws, ground to green screw (follow the markings on the device).",
-      "Ensure the wires are fully seated under terminals (no bare strands beyond the terminal). Tighten screws firmly without over-torquing.",
-      "If using backstab/side-wire terminals, prefer side screws for better long-term connection (unless your specific device instructions require otherwise).",
-      "Gently tuck wires back into the box, ensuring they are not pinched, then screw the receptacle into the box.",
-      "Reinstall the faceplate.",
-      "Turn the breaker ON and test the outlet with a plug-in outlet tester; confirm correct wiring indication (and GFCI test/reset if applicable)."
-    ],
-    "safety_info": "Work only when you can clearly identify and switch OFF the correct breaker. Always verify power is truly off with a non-contact tester (and a multimeter if available). Never assume colors mean hot/neutral/ground—use the device markings and existing connection layout. Do not touch wiring if you detect voltage. Stop immediately and call a licensed electrician if you see aluminum wiring that looks corroded, charred/burnt insulation, melted plastic, loose wiring that won’t tighten securely, evidence of water intrusion, or if the outlet is part of an unusual setup (e.g., 240V, knob-and-tube, aluminum branch wiring without proper connectors, or complex multi-wire branch circuits). If the breaker trips repeatedly when turned back on, do not continue—call a professional.",
-    "tips": "Match the existing receptacle type (standard vs GFCI/USB) and rating; don’t substitute a different type without understanding requirements. Take photos before disconnecting to preserve wire positions. Prefer side-screw connections over backstab for reliability. Use the correct screw terminals and ensure the ground wire is securely attached. After installation, test with a plug-in tester and, if it’s a GFCI receptacle, press TEST and RESET to confirm operation. If the outlet is on a daisy chain and others are also affected, you may need to inspect upstream connections—if you’re unsure, a pro can troubleshoot safely.",
-    "trace_id": "d03451c8-5f75-4abf-89f8-a80381e4272c"
+    "safety_info": "Turn off power to the furnace at the switch/breaker before removing panels or handling wiring. Avoid touching hot surfaces. Do not bypass safety switches. If you smell gas, see soot, or notice electrical burning, shut down the system and contact a licensed technician immediately.",
+    "tips": "Replace filters more frequently during heavy heating seasons (often every 1–3 months, sooner with pets or allergies). Keep thermostat settings stable and avoid frequent cycling. Use AUTO fan for normal operation. Keep a note of the filter size and MERV rating to make replacements faster. If you have a programmable thermostat, verify it’s not set to an incorrect schedule or hold mode.",
+    "trace_id": "c31d94d8-4dc3-4f4b-ad71-f2a6b50de537"
   }
 ]
