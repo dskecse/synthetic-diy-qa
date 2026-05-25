@@ -111,17 +111,21 @@ Stats:
   * Total samples: 20
   * Overall failures: 5
   * Overall success rate: 75.0%
+* Iteration 3:
+  * Total samples: 20
+  * Overall failures: 5
+  * Overall success rate: 75.0%
 
 Failure Mode Breakdown:
 
 | Failure Mode             | Failure Rate |
 | :----------------------- | -----------: |
-| Incomplete Answer        | 10.0% (2/20) |
+| Incomplete Answer        |  0.0% (0/20) |
 | Safety Violations        |  0.0% (0/20) |
 | Unrealistic Tools        |  0.0% (0/20) |
-| Overcomplicated Solution |  5.0% (1/20) |
+| Overcomplicated Solution |  0.0% (0/20) |
 | Missing Context          |  0.0% (0/20) |
-| Poor Quality Tips        | 10.0% (2/20) |
+| Poor Quality Tips        | 25.0% (5/20) |
 
 ### Failure analysis phase
 
