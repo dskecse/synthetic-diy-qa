@@ -4,71 +4,65 @@
     "overall_failure_rate": 0.25,
     "overall_success_rate": 0.75,
     "failure_mode_rates": {
-      "incomplete_answer": 0.1,
+      "incomplete_answer": 0.0,
       "safety_violations": 0.0,
       "unrealistic_tools": 0.0,
-      "overcomplicated_solution": 0.05,
+      "overcomplicated_solution": 0.0,
       "missing_context": 0.0,
-      "poor_quality_tips": 0.1
+      "poor_quality_tips": 0.25
     },
     "failure_mode_counts": {
-      "incomplete_answer": "2",
+      "incomplete_answer": "0",
       "safety_violations": "0",
       "unrealistic_tools": "0",
-      "overcomplicated_solution": "1",
+      "overcomplicated_solution": "0",
       "missing_context": "0",
-      "poor_quality_tips": "2"
+      "poor_quality_tips": "5"
     },
     "most_common_failures": [
-      "incomplete_answer",
       "poor_quality_tips",
-      "overcomplicated_solution"
+      "incomplete_answer",
+      "safety_violations"
     ],
     "least_common_failures": [
-      "safety_violations",
       "unrealistic_tools",
+      "overcomplicated_solution",
       "missing_context"
     ]
   },
-  "correlations": "                          incomplete_answer  safety_violations  unrealistic_tools  overcomplicated_solution  missing_context  poor_quality_tips\nincomplete_answer                  1.000000                NaN                NaN                 -0.076472              NaN          -0.111111\nsafety_violations                       NaN                NaN                NaN                       NaN              NaN                NaN\nunrealistic_tools                       NaN                NaN                NaN                       NaN              NaN                NaN\novercomplicated_solution          -0.076472                NaN                NaN                  1.000000              NaN          -0.076472\nmissing_context                         NaN                NaN                NaN                       NaN              NaN                NaN\npoor_quality_tips                 -0.111111                NaN                NaN                 -0.076472              NaN           1.000000",
+  "correlations": "                          incomplete_answer  safety_violations  unrealistic_tools  overcomplicated_solution  missing_context  poor_quality_tips\nincomplete_answer                       NaN                NaN                NaN                       NaN              NaN                NaN\nsafety_violations                       NaN                NaN                NaN                       NaN              NaN                NaN\nunrealistic_tools                       NaN                NaN                NaN                       NaN              NaN                NaN\novercomplicated_solution                NaN                NaN                NaN                       NaN              NaN                NaN\nmissing_context                         NaN                NaN                NaN                       NaN              NaN                NaN\npoor_quality_tips                       NaN                NaN                NaN                       NaN              NaN                1.0",
   "failure_patterns": {
     "No Failures": 15,
-    "Poor Quality Tips": 2,
-    "Incomplete Answer": 2,
-    "Overcomplicated Solution": 1
+    "Poor Quality Tips": 5
   },
   "detailed_patterns": {
     "No Failures": [
       0,
       1,
+      2,
       3,
-      4,
       5,
       6,
       7,
       8,
-      9,
       10,
       11,
       12,
-      16,
-      18,
-      19
+      13,
+      14,
+      15,
+      18
     ],
     "Poor Quality Tips": [
-      2,
-      15
-    ],
-    "Incomplete Answer": [
-      13,
-      17
-    ],
-    "Overcomplicated Solution": [
-      14
+      4,
+      9,
+      16,
+      17,
+      19
     ]
   },
   "recommendations": [
-    "Focus on improving 'incomplete answer' - it's the most common failure mode (10.0% failure rate)",
+    "Focus on improving 'poor quality tips' - it's the most common failure mode (25.0% failure rate)",
     "Good news: 75.0% of samples have no failures - analyze these for best practices"
   ]
 }
